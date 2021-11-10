@@ -2,7 +2,7 @@
 
 Bonjou, toukèkènn!
 
-Weather app originally created by CodeExplained (https://github.com/CodeExplainedRepo/Weather-App-JavaScript) to which I have added translations of weather descriptions into Kouri-Vini (Louisiana Creole). Please let me know if any of my translations aren't showing up correctly. Byin mèsi. :)
+Weather app originally created by CodeExplained (https://github.com/CodeExplainedRepo/Weather-App-JavaScript) to which I have added translations of weather descriptions in Kouri-Vini (Louisiana Creole). Please let me know if any of my translations aren't showing up correctly. Byin mèsi. :)
 
 The lines I've added begin on line 75 in the section entitled "Kouri-Vini translations."
 
