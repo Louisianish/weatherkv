@@ -75,15 +75,78 @@ function displayWeather(){
     // Kouri-Vini translations
     let text = document.getElementById("kourivini").innerHTML;
     
-    if(descElement.innerHTML = "clear sky"){
-        document.getElementById("kourivini").innerHTML = text.replace("clear sky", "syèl klær");
-    } else if(descElement.innerHTML = "haze"){
-            document.getElementById("kourivini").innerHTML = text.replace("haze", "brouyar");
-    } else if(descElement.innerHTML = "scattered clouds"){
-        document.getElementById("kourivini").innerHTML = text.replace("scattered clouds", "kèk miriyaj");
-    } else if(descElement.innerHTML = "broken clouds"){
-        document.getElementById("kourivini").innerHTML = text.replace("broken clouds", "kouvær");
-    }
+        // Clear - 01d & 01n
+        if(descElement.innerHTML = "clear sky"){
+            document.getElementById("kourivini").innerHTML = text.replace("clear sky", "syèl klær");
+        }
+        // Clouds - 02d & 02n
+        else if(descElement.innerHTML = "few clouds"){
+            document.getElementById("kourivini").innerHTML = text.replace("few clouds", "");
+        }
+        // Clouds - 03d & 03n
+        else if(descElement.innerHTML = "scattered clouds"){
+            document.getElementById("kourivini").innerHTML = text.replace("scattered clouds", "kèk miriyaj");
+        }
+        // Clouds - 04d & 04n
+        else if(descElement.innerHTML = "broken clouds"){
+            document.getElementById("kourivini").innerHTML = text.replace("broken clouds", "kouvær");
+        } else if(descElement.innerHTML = "broken clouds"){
+            document.getElementById("kourivini").innerHTML = text.replace("overcast clouds", "kouvær");
+        }
+        // Drizzle & Rain - 09d & 09n
+        else if(descElement.innerHTML = "shower rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("shower rain", "lapli");
+        } else if(descElement.innerHTML = "light intensity shower rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("light intensity shower rain", "lapli");
+        } else if(descElement.innerHTML = "heavy intensity shower rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("heavy intensity shower rain", "lapli");
+        } else if(descElement.innerHTML = "ragged shower rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("ragged shower rain", "lapli");
+        } else if(descElement.innerHTML = "light intensity drizzle"){
+            document.getElementById("kourivini").innerHTML = text.replace("light intensity drizzle", "lapli");
+        } else if(descElement.innerHTML = "drizzle"){
+            document.getElementById("kourivini").innerHTML = text.replace("drizzle", "lapli");
+        } else if(descElement.innerHTML = "heavy intensity drizzle"){
+            document.getElementById("kourivini").innerHTML = text.replace("heavy intensity drizzle", "lapli");
+        } else if(descElement.innerHTML = "light intensity drizzle rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("light intensity drizzle rain", "lapli");
+        } else if(descElement.innerHTML = "drizzle rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("drizzle rain", "lapli");
+        } else if(descElement.innerHTML = "heavy intensity drizzle rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("heavy intensity drizzle rain", "lapli");
+        } else if(descElement.innerHTML = "shower rain and drizzle"){
+            document.getElementById("kourivini").innerHTML = text.replace("shower rain and drizzle", "lapli");
+        } else if(descElement.innerHTML = "heavy shower rain and drizzle"){
+            document.getElementById("kourivini").innerHTML = text.replace("heavy shower rain and drizzle", "lapli");
+        } else if(descElement.innerHTML = "shower drizzle"){
+            document.getElementById("kourivini").innerHTML = text.replace("shower drizzle", "lapli");
+        }
+        // Rain - 10d & 10n
+        else if(descElement.innerHTML = "rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("rain", "lapli");
+        } else if(descElement.innerHTML = "light rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("light rain", "lapli dous");
+        } else if(descElement.innerHTML = "moderate rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("moderate rain", "lapli moyin");
+        } else if(descElement.innerHTML = "heavy intensity rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("heavy intensity rain", "lapli fòr");
+        } else if(descElement.innerHTML = "very heavy rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("very heavy rain", "lapli fòr");
+        } else if(descElement.innerHTML = "extreme rain"){
+            document.getElementById("kourivini").innerHTML = text.replace("extreme rain", "lapli fòr");
+        }
+        // Thunderstorm - 11d & 11n
+        else if(descElement.innerHTML = "thunderstorm"){
+            document.getElementById("kourivini").innerHTML = text.replace("thunderstorm", "");
+        }
+        // Snow - 13d & 13n
+        else if(descElement.innerHTML = "snow"){
+            document.getElementById("kourivini").innerHTML = text.replace("snow", "lanèj");
+        }
+        // Atmosphere - 50d & 50n
+        else if(descElement.innerHTML = "mist"){
+            document.getElementById("kourivini").innerHTML = text.replace("mist", "brouyar");
+        }
 }
 // C to F conversion
 function celsiusToFahrenheit(temperature){
