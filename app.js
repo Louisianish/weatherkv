@@ -81,7 +81,7 @@ function displayWeather(){
         }
         // Clouds - 02d & 02n
         else if(descElement.innerHTML = "few clouds"){
-            document.getElementById("kourivini").innerHTML = text.replace("few clouds", "");
+            document.getElementById("kourivini").innerHTML = text.replace("few clouds", "kèk miriyaj");
         }
         // Clouds - 03d & 03n
         else if(descElement.innerHTML = "scattered clouds"){
