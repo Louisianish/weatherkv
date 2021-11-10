@@ -6,6 +6,13 @@ Weather app originally created by CodeExplained (https://github.com/CodeExplaine
 
 The lines I've added begin on line 75 in the section entitled "Kouri-Vini translations."
 
+To do list:
+✅ Translate all weather descriptions into Louisiana Creole
+☑️ Make it start out with Fahrenheit
+☑️ Add more CSS and make it responsive
+☑️ Add option for user to get embed code
+☑️ Add form for option to input a city
+
 I realize there may be an easier way to accomplish this, but the 'replace()' function was the best I could do with my limited knowledge. I tried doing it with key/value pairs, but I couldn't quite figure out how to get it to do what I wanted. Suggestions are always more than welcome! I'm eager to learn and improve!
 
 -- Louisianish
