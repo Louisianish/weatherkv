@@ -80,7 +80,7 @@ function displayWeather(){
             document.getElementById("kourivini").innerHTML = text.replace("clear sky", "syèl klær");
         }
         // Clouds - 02d & 02n
-        else if(descElement.innerHTML = "few clouds"){
+        if(descElement.innerHTML = "few clouds"){
             document.getElementById("kourivini").innerHTML = text.replace("few clouds", "kèk miriyaj");
         }
         // Clouds - 03d & 03n
