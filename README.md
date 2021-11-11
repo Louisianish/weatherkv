@@ -8,7 +8,7 @@ The lines I've added begin on line 75 in the section entitled "Kouri-Vini transl
 
 To do list: <br>
 ✅ Translate all weather descriptions into Louisiana Creole <br>
-☑️ Make it start out with Fahrenheit <br>
+✅ Make it start out with Fahrenheit upon loading <br>
 ☑️ Add more CSS and make it responsive <br>
 ☑️ Add option for user to get embed code <br>
 ☑️ Add form for option to input a city <br>
