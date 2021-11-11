@@ -12,11 +12,11 @@ const notificationElement = document.querySelector(".notification");
 const weather = {};
 
 weather.temperature = {
-    unit : "celsius"
+    unit : "fahrenheit"
 }
 
 // APP CONSTS AND VARS
-const KELVIN = 273;
+const KELVIN = 273.15;
 // API KEY
 const key = "82005d27a116c2880c8f0fcb866998a0";
 
@@ -44,7 +44,7 @@ function showError(error){
 
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude){
-    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=imperial`;
 
     console.log(api);
     
@@ -54,7 +54,7 @@ function getWeather(latitude, longitude){
             return data;
         })
         .then(function(data){
-            weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+            weather.temperature.value = Math.floor(data.main.temp);
             weather.description = data.weather[0].description;
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
@@ -68,7 +68,7 @@ function getWeather(latitude, longitude){
 // DISPLAY WEATHER TO UI
 function displayWeather(){
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
-    tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
+    tempElement.innerHTML = `${weather.temperature.value}°<span>F</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 
@@ -197,24 +197,47 @@ function displayWeather(){
     else if(text == "sand/dust whirls")
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
 }
-// C to F conversion
-function celsiusToFahrenheit(temperature){
-    return (temperature * 9/5) + 32;
+
+// K to F conversion
+
+// F to C conversion
+function fahrenheitToCelsius(temperature){
+    return (temperature - 32) * (5/9);
 }
+// C to F conversion
+// function celsiusToFahrenheit(temperature){
+//     return (temperature * 9/5) + 32;
+// }
 
 // WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENT
-tempElement.addEventListener("click", function(){
+// when Fahrenheit is displayed upon loading
+tempElement.addEventListener("click", function(){    
     if(weather.temperature.value === undefined) return;
     
-    if(weather.temperature.unit == "celsius"){
-        let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
-        fahrenheit = Math.floor(fahrenheit);
+    if(weather.temperature.unit == "fahrenheit"){
+        let celsius = fahrenheitToCelsius(weather.temperature.value);
+        celsius = Math.floor(celsius);
         
-        tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
-        weather.temperature.unit = "fahrenheit";
+        tempElement.innerHTML = `${celsius}°<span>C</span>`;
+        weather.temperature.unit = "celsius";
     }else{
-        tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
-        weather.temperature.unit = "celsius"
+        tempElement.innerHTML = `${weather.temperature.value}°<span>F</span>`;
+        weather.temperature.unit = "fahrenheit"
     }
 });
+// when Celsius is displayed upon loading
+// tempElement.addEventListener("click", function(){
+//     if(weather.temperature.value === undefined) return;
+    
+//     if(weather.temperature.unit == "celsius"){
+//         let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
+//         fahrenheit = Math.floor(fahrenheit);
+        
+//         tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
+//         weather.temperature.unit = "fahrenheit";
+//     }else{
+//         tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
+//         weather.temperature.unit = "celsius"
+//     }
+// });
 
