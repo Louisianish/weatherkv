@@ -81,15 +81,15 @@ function displayWeather(){
         // Clouds - 02d & 02n
         else if(text == "few clouds")
             document.getElementById("kourivini").innerHTML = text.replace(text, "kèk miriyaj");
-        // // Clouds - 03d & 03n
+        // Clouds - 03d & 03n
         else if(text == "scattered clouds")
             document.getElementById("kourivini").innerHTML = text.replace(text, "kèk miriyaj");
-        // // Clouds - 04d & 04n
+        // Clouds - 04d & 04n
         else if(text == "broken clouds")
             document.getElementById("kourivini").innerHTML = text.replace(text, "kouvær");
         else if(text == "overcast clouds")
             document.getElementById("kourivini").innerHTML = text.replace(text, "kouvær");
-        // // Drizzle & Rain - 09d & 09n
+        // Drizzle & Rain - 09d & 09n
         else if(text == "shower rain")
             document.getElementById("kourivini").innerHTML = text.replace(text, "lavalas");
         else if(text == "light intensity shower rain")
