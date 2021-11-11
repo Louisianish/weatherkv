@@ -20,12 +20,47 @@ const KELVIN = 273.15;
 // API KEY
 const key = "82005d27a116c2880c8f0fcb866998a0";
 
+// City search
+
+
+
+// searchButton.addEventListener('click', (e) =>
+// {
+//     e.preventDefault();
+//     getWeather(searchInput.value);
+//     searchInput.value='';
+// });
+
+// const getWeather = async (city) =>
+// {
+//     try{
+//         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0`)
+//             {mode: 'cors'};
+
+//         const weatherData = await response.json();
+//         console.log(weatherData);
+//         const{name} = weatherData;
+//         const{id, main} = weatherData.weather[0];
+//         loc.textContent = name;
+//         climate.textContent = main;
+//         tempvalue.textContent = Math.floor(fahrenheit);
+
+        
+//     }
+//     finally{};
+// };
+
+
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator){
     navigator.geolocation.getCurrentPosition(setPosition, showError);
 }else{
     notificationElement.style.display = "block";
     notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
+}
+
+function newFunction() {
+    try { } finally { }
 }
 
 // SET USER'S POSITION
