@@ -81,6 +81,9 @@ function showError(error){
 function getWeather(latitude, longitude){
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=imperial`;
 
+// function getWeather(city){
+//         let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0`;
+
     console.log(api);
     
     fetch(api)
@@ -162,7 +165,7 @@ function displayWeather(){
         document.getElementById("kourivini").innerHTML = text.replace(text, "gro lapli");
     else if(text == "very heavy rain")
         document.getElementById("kourivini").innerHTML = text.replace(text, "gro lapli");
-    else if(descElement.innerHTML == "extreme rain")
+    else if(text == "extreme rain")
         document.getElementById("kourivini").innerHTML = text.replace(text, "gro lapli");
     // Thunderstorm - 11d & 11n
     else if(text == "thunderstorm")
@@ -231,7 +234,19 @@ function displayWeather(){
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
     else if(text == "sand/dust whirls")
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
+
+    // To do: Figure out where to actually put this    
+    // search: function () {
+    //     this.fetchWeather(document.querySelector(".search-bar").value);
+    // }
 }
+
+// To do: Figure out where to actually put this
+// document
+//     .querySelector(".button")
+//     .addEventListener("click", function () {
+//         weather.search();
+//     });
 
 // K to F conversion
 
@@ -275,4 +290,6 @@ tempElement.addEventListener("click", function(){
 //         weather.temperature.unit = "celsius"
 //     }
 // });
+
+
 
