@@ -255,7 +255,7 @@ tempElement.addEventListener("click", function(){
 
 /******************************************************************************************************************************************************************************
 The following lines of code were just various functions that I was trying out to get the search feature to work, but even though some of these end up being what I need to use,
-I don't know how to implement them correctly. If anyone reading this knows how to accomplish this, I would greatly appreciate the suggestions!
+I don't know how to implement them correctly (like where they go and whatnot). If anyone reading this knows how to accomplish this, I would greatly appreciate the suggestions!
 ******************************************************************************************************************************************************************************/
 
 
