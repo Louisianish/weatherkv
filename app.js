@@ -20,8 +20,6 @@ const KELVIN = 273.15;
 // API KEY
 const key = "82005d27a116c2880c8f0fcb866998a0";
 
-// City search
-
 
 
 // searchButton.addEventListener('click', (e) =>
@@ -248,7 +246,66 @@ function displayWeather(){
 //         weather.search();
 //     });
 
-// K to F conversion
+
+// // TEST from GitHub
+// const event = events();
+// autoComplete();
+// const submit = document.getElementById('searchbtn');
+// submit.addEventListener('click', event.getLocation.bind(this, 'search'));
+
+// const events = function events() {
+//     function showFlow(data) {
+//       dom().clearForms();
+//       dom().fillCard(data);
+//       dom().imageSwitch(data, 'image');
+//       dom().show('search');
+//     }
+  
+//     function forecastFlow(data) {
+//       dom().clearForms();
+//       dom().createCard(data);
+//       dom().show('forecast');
+//     }
+  
+//     async function getSearch(city) {
+//       try {
+//         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
+//         const response = await fetch(url, { mode: 'cors' });
+//         const cityData = await response.json();
+//         showFlow(cityData);
+//       } catch (error) {
+//         console.error('Error:', error);
+//         alert('Pa ka trouvé vilaj-la');
+//       }
+//     }
+  
+//     function getLocation() {
+//       const city = (document.getElementById('searchbar').value);
+//       getSearch(city);
+//     }
+  
+//     async function getForecast() {
+//       try {
+//         const value = (document.getElementById('searchbar').value);
+//         const url = `https://api.openweathermap.org/data/2.5/forecast?q=${value}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
+//         const response = await fetch(url, { mode: 'cors' });
+//         const cityData = await response.json();
+//         forecastFlow(cityData);
+//       } catch (error) {
+//         console.error('Error:', error);
+//         alert('Pa ka trouvé vilaj-la');
+//       }
+//     }
+  
+  
+//     return {
+//       getSearch, showFlow, getForecast, getLocation,
+//     };
+//   };
+
+
+
+
 
 // F to C conversion
 function fahrenheitToCelsius(temperature){
@@ -293,3 +350,62 @@ tempElement.addEventListener("click", function(){
 
 
 
+
+
+// TEST from https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
+const form = document.querySelector("searchbar");
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const inputVal = input.value;
+});
+
+const apiKey = "82005d27a116c2880c8f0fcb866998a0";
+const inputVal = input.value;
+
+const urlcity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
+
+document
+    .querySelector(".button")
+    .addEventListener("click", function () {
+        weather.search();
+    });
+
+
+
+
+// const searchButton =
+// searchButton.addEventListener('click', (e) =>
+// {
+//     e.preventDefault();
+//     getWeather(searchInput.value);
+//     searchInput.value='';
+// });
+
+
+// fetch(urlcity)
+//   .then(response => response.json())
+//   .then(data => {
+//     // do stuff with the data
+//   })
+//   .catch(() => {
+//     msg.textContent = "Please search for a valid city 😩";
+//   });
+
+// fetch(urlcity).then(res => {
+//      return res.json();
+// }).then(function(res) {
+//     console.log(res.coord);
+// });
+
+async function getSearch(city) {
+          try {
+            const urlcity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
+            const response = await fetch(urlcity, { mode: 'cors' });
+            const cityData = await response.json();
+            showFlow(cityData);
+          } catch (error) {
+            console.error('Error:', error);
+            alert('Pa ka trouvé vilaj-la');
+            }
+}
