@@ -83,7 +83,7 @@ body {
     padding: 0;
 }
 
-.icon {}
+/* .icon {} */
 
 /* .temperature-description{
     
@@ -127,13 +127,13 @@ body {
     text-align: center;
 }
 
-.search {
+#search {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-input.search-bar {
+#searchbar {
     border: 1.5px solid #293251;
     border-radius: 24px;
     font-family: "Rimouski";
