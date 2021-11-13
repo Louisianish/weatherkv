@@ -9,10 +9,10 @@ The lines I've added begin on line 75 in the section entitled "Kouri-Vini transl
 To do list: <br>
 ✅ Translate all weather descriptions into Louisiana Creole <br>
 ✅ Make it start out with Fahrenheit upon loading <br>
-☑️ Add note under temperature that says "click to change units" <br>
-☑️ Add more CSS and make it responsive <br>
-☑️ Add option for user to get embed code below <br>
+✅ Add note under temperature that says "click to change units" <br>
 ☑️ Add form for option to input a city <br>
+☑️ Add option for user to get embed code below <br>
+☑️ Add more CSS and make it responsive <br>
 
 I realize there may be an easier way to accomplish this, but the 'replace()' function was the best I could do with my limited knowledge. I tried doing it with key/value pairs, but I couldn't quite figure out how to get it to do what I wanted. Suggestions are always more than welcome! I'm eager to learn and improve!
 
