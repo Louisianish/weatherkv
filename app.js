@@ -17,37 +17,9 @@ weather.temperature = {
 
 // APP CONSTS AND VARS
 const KELVIN = 273.15;
+
 // API KEY
 const key = "82005d27a116c2880c8f0fcb866998a0";
-
-
-
-// searchButton.addEventListener('click', (e) =>
-// {
-//     e.preventDefault();
-//     getWeather(searchInput.value);
-//     searchInput.value='';
-// });
-
-// const getWeather = async (city) =>
-// {
-//     try{
-//         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0`)
-//             {mode: 'cors'};
-
-//         const weatherData = await response.json();
-//         console.log(weatherData);
-//         const{name} = weatherData;
-//         const{id, main} = weatherData.weather[0];
-//         loc.textContent = name;
-//         climate.textContent = main;
-//         tempvalue.textContent = Math.floor(fahrenheit);
-
-        
-//     }
-//     finally{};
-// };
-
 
 // CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator){
@@ -108,7 +80,7 @@ function displayWeather(){
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 
-    // Kouri-Vini translations 
+    // Kouri-Vini translations by Louisianish
     let text = document.getElementById("kourivini").innerHTML;
 
     // Clear - 01d & 01n
@@ -232,19 +204,136 @@ function displayWeather(){
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
     else if(text == "sand/dust whirls")
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
-
-    // To do: Figure out where to actually put this    
-    // search: function () {
-    //     this.fetchWeather(document.querySelector(".search-bar").value);
-    // }
 }
 
-// To do: Figure out where to actually put this
+// F to C conversion
+function fahrenheitToCelsius(temperature){
+    return (temperature - 32) * (5/9);
+}
+// // C to F conversion
+// function celsiusToFahrenheit(temperature){
+//     return (temperature * 9/5) + 32;
+// }
+
+// WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENT
+// when Fahrenheit is displayed upon loading
+tempElement.addEventListener("click", function(){    
+    if(weather.temperature.value === undefined) return;
+    
+    if(weather.temperature.unit == "fahrenheit"){
+        let celsius = fahrenheitToCelsius(weather.temperature.value);
+        celsius = Math.floor(celsius);
+        
+        tempElement.innerHTML = `${celsius}°<span>C</span>`;
+        weather.temperature.unit = "celsius";
+    }else{
+        tempElement.innerHTML = `${weather.temperature.value}°<span>F</span>`;
+        weather.temperature.unit = "fahrenheit"
+    }
+});
+
+// // when Celsius is displayed upon loading
+// // tempElement.addEventListener("click", function(){
+//     if(weather.temperature.value === undefined) return;
+    
+//     if(weather.temperature.unit == "celsius"){
+//         let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
+//         fahrenheit = Math.floor(fahrenheit);
+        
+//         tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
+//         weather.temperature.unit = "fahrenheit";
+//     }else{
+//         tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
+//         weather.temperature.unit = "celsius"
+//     }
+// });
+
+
+
+
+
+
+/******************************************************************************************************************************************************************************
+The following lines of code were just various functions that I was trying out to get the search feature to work, but even though some of these end up being what I need to use,
+I don't know how to implement them correctly. If anyone reading this knows how to accomplish this, I would greatly appreciate the suggestions!
+******************************************************************************************************************************************************************************/
+
+
+
+
+// // TEST from https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
+// // const form = document.querySelector("searchbar");
+
+// form.addEventListener("submit", e => {
+//   e.preventDefault();
+//   const inputVal = input.value;
+// });
+
+// const apiKey = "82005d27a116c2880c8f0fcb866998a0";
+// const inputVal = input.value;
+
+// const urlcity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
+
 // document
 //     .querySelector(".button")
 //     .addEventListener("click", function () {
 //         weather.search();
 //     });
+
+
+
+
+// const searchButton =
+// searchButton.addEventListener('click', (e) =>
+// {
+//     e.preventDefault();
+//     getWeather(searchInput.value);
+//     searchInput.value='';
+// });
+
+// fetch(urlcity)
+//   .then(response => response.json())
+//   .then(data => {
+//     // do stuff with the data
+//   })
+//   .catch(() => {
+//     msg.textContent = "Please search for a valid city 😩";
+//   });
+
+// fetch(urlcity).then(res => {
+//      return res.json();
+// }).then(function(res) {
+//     console.log(res.coord);
+// });
+
+// async function getSearch(city) {
+//           try {
+//             const urlcity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
+//             const response = await fetch(urlcity, { mode: 'cors' });
+//             const cityData = await response.json();
+//             showFlow(cityData);
+//           } catch (error) {
+//             console.error('Error:', error);
+//             alert('Pa ka trouvé vilaj-la');
+//             }
+// }
+
+
+
+
+// // To do: Figure out where to actually put this
+// document
+//     .querySelector(".button")
+//     .addEventListener("click", function () {
+//         weather.search();
+//     });
+
+//  To do: Figure out where to actually put this    
+//     search: function () {
+//         this.fetchWeather(document.querySelector(".search-bar").value);
+//     }
+
+
 
 
 // // TEST from GitHub
@@ -302,110 +391,3 @@ function displayWeather(){
 //       getSearch, showFlow, getForecast, getLocation,
 //     };
 //   };
-
-
-
-
-
-// F to C conversion
-function fahrenheitToCelsius(temperature){
-    return (temperature - 32) * (5/9);
-}
-// C to F conversion
-// function celsiusToFahrenheit(temperature){
-//     return (temperature * 9/5) + 32;
-// }
-
-// WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENT
-// when Fahrenheit is displayed upon loading
-tempElement.addEventListener("click", function(){    
-    if(weather.temperature.value === undefined) return;
-    
-    if(weather.temperature.unit == "fahrenheit"){
-        let celsius = fahrenheitToCelsius(weather.temperature.value);
-        celsius = Math.floor(celsius);
-        
-        tempElement.innerHTML = `${celsius}°<span>C</span>`;
-        weather.temperature.unit = "celsius";
-    }else{
-        tempElement.innerHTML = `${weather.temperature.value}°<span>F</span>`;
-        weather.temperature.unit = "fahrenheit"
-    }
-});
-// when Celsius is displayed upon loading
-// tempElement.addEventListener("click", function(){
-//     if(weather.temperature.value === undefined) return;
-    
-//     if(weather.temperature.unit == "celsius"){
-//         let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
-//         fahrenheit = Math.floor(fahrenheit);
-        
-//         tempElement.innerHTML = `${fahrenheit}°<span>F</span>`;
-//         weather.temperature.unit = "fahrenheit";
-//     }else{
-//         tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
-//         weather.temperature.unit = "celsius"
-//     }
-// });
-
-
-
-
-
-// TEST from https://webdesign.tutsplus.com/tutorials/build-a-simple-weather-app-with-vanilla-javascript--cms-33893
-const form = document.querySelector("searchbar");
-
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  const inputVal = input.value;
-});
-
-const apiKey = "82005d27a116c2880c8f0fcb866998a0";
-const inputVal = input.value;
-
-const urlcity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
-
-document
-    .querySelector(".button")
-    .addEventListener("click", function () {
-        weather.search();
-    });
-
-
-
-
-// const searchButton =
-// searchButton.addEventListener('click', (e) =>
-// {
-//     e.preventDefault();
-//     getWeather(searchInput.value);
-//     searchInput.value='';
-// });
-
-
-// fetch(urlcity)
-//   .then(response => response.json())
-//   .then(data => {
-//     // do stuff with the data
-//   })
-//   .catch(() => {
-//     msg.textContent = "Please search for a valid city 😩";
-//   });
-
-// fetch(urlcity).then(res => {
-//      return res.json();
-// }).then(function(res) {
-//     console.log(res.coord);
-// });
-
-async function getSearch(city) {
-          try {
-            const urlcity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
-            const response = await fetch(urlcity, { mode: 'cors' });
-            const cityData = await response.json();
-            showFlow(cityData);
-          } catch (error) {
-            console.error('Error:', error);
-            alert('Pa ka trouvé vilaj-la');
-            }
-}
