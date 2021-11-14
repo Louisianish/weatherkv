@@ -14,7 +14,7 @@ To do list: <br>
 ☑️ Add option for user to get embed code below <br>
 ☑️ Add more CSS and make it responsive <br>
 
-I realize there may be an easier way to accomplish this, but the 'replace()' function was the best I could do with my limited knowledge. I tried doing it with key/value pairs, but I couldn't quite figure out how to get it to do what I wanted. Suggestions are always more than welcome! I'm eager to learn and improve!
+I realize there may be an easier way to accomplish this, but the 'replace()' method and 'if else' were the best I could do with my limited knowledge. I tried doing it with key/value pairs, but I couldn't quite figure out how to get it to do what I wanted. Suggestions are always more than welcome! I'm eager to learn and improve!
 
 -- Louisianish
 
