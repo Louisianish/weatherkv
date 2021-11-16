@@ -6,13 +6,16 @@ Weather app originally created by CodeExplained (https://github.com/CodeExplaine
 
 The lines I've added begin on line 75 in the section entitled "Kouri-Vini translations."
 
-To do list: <br>
+To do list for Phase 1: <br>
 ✅ Translate all weather descriptions into Louisiana Creole <br>
 ✅ Make it start out with Fahrenheit upon loading <br>
 ✅ Add note under temperature that says "click to change units" <br>
-☑️ Add form for option to input a city <br>
-☑️ Add option for user to get embed code below <br>
-☑️ Add more CSS and make it responsive <br>
+✅ Add form for option to input a city <br>
+☑️ Add state and country search to API link <br>
+☑️ Add more CSS <br>
+To do list for Phase 2: <br>
+☑️ <br>
+☑️ Add more CSS <br>
 
 I realize there may be an easier way to accomplish this, but the 'replace()' method and 'if else' were the best I could do with my limited knowledge. I tried doing it with key/value pairs, but I couldn't quite figure out how to get it to do what I wanted. Suggestions are always more than welcome! I'm eager to learn and improve!
 
