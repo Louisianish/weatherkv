@@ -1,4 +1,4 @@
-// Tutorial by http://youtube.com/CodeExplained
+// Tutorial by http://youtube.com/CodeExplained - Alterations by Louisianish
 // api key : 82005d27a116c2880c8f0fcb866998a0
 
 // SELECT ELEMENTS
@@ -51,9 +51,6 @@ function showError(error){
 function getWeather(latitude, longitude){
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=imperial`;
 
-// function getWeather(city){
-//         let api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0`;
-
     console.log(api);
     
     fetch(api)
@@ -80,12 +77,12 @@ function displayWeather(){
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 
-    // Kouri-Vini translations by Louisianish
+    // Kouri-Vini translations - Added by Louisianish
     let text = document.getElementById("kourivini").innerHTML;
 
     // Clear - 01d & 01n
     if(text == "clear sky")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "syèl klær");
+    document.getElementById("kourivini").innerHTML = text.replace(text, "syèl klær");
     // Clouds - 02d & 02n
     else if(text == "few clouds")
         document.getElementById("kourivini").innerHTML = text.replace(text, "kèk miriyaj");
@@ -206,7 +203,7 @@ function displayWeather(){
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
 }
 
-// F to C conversion
+// F to C conversion - Added by Louisianish
 function fahrenheitToCelsius(temperature){
     return (temperature - 32) * (5/9);
 }
@@ -216,7 +213,7 @@ function fahrenheitToCelsius(temperature){
 // }
 
 // WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENT
-// when Fahrenheit is displayed upon loading
+// when Fahrenheit is displayed upon loading - Added by Louisianish
 tempElement.addEventListener("click", function(){    
     if(weather.temperature.value === undefined) return;
     
@@ -233,7 +230,7 @@ tempElement.addEventListener("click", function(){
 });
 
 // // when Celsius is displayed upon loading
-// // tempElement.addEventListener("click", function(){
+// tempElement.addEventListener("click", function(){
 //     if(weather.temperature.value === undefined) return;
     
 //     if(weather.temperature.unit == "celsius"){
@@ -247,6 +244,47 @@ tempElement.addEventListener("click", function(){
 //         weather.temperature.unit = "celsius"
 //     }
 // });
+
+
+// Search for a city - Added by Louisianish
+var form = document.getElementById('search')
+
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault()
+
+  var searchbar = document.getElementById('searchbar').value
+
+  console.log(searchbar)
+})
+
+// Add a function for city to be submitted upon pressing 'Enter'
+
+
+document
+    .querySelector(".button")
+    .addEventListener("click", function () {
+        const city = (document.getElementById('searchbar').value);
+        let apiCity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=imperial`;
+        
+        console.log(apiCity);
+        
+        fetch(apiCity)
+            .then(function(response){
+                let data = response.json();
+                return data
+            .then(function(data) {
+                weather.temperature.value = Math.floor(data.main.temp);
+                weather.description = data.weather[0].description;
+                weather.iconId = data.weather[0].icon;
+                weather.city = data.name;
+                weather.country = data.sys.country;
+            })
+            .then(function(){
+                displayWeather();
+            });   
+    });
+})
 
 
 
@@ -274,21 +312,14 @@ I don't know how to implement them correctly (like where they go and whatnot). I
 
 // const urlcity = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
 
-// document
-//     .querySelector(".button")
-//     .addEventListener("click", function () {
-//         weather.search();
-//     });
-
-
 
 
 // const searchButton =
 // searchButton.addEventListener('click', (e) =>
 // {
 //     e.preventDefault();
-//     getWeather(searchInput.value);
-//     searchInput.value='';
+    // getWeather(searchInput.value);
+    // searchInput.value='';
 // });
 
 // fetch(urlcity)
@@ -336,58 +367,4 @@ I don't know how to implement them correctly (like where they go and whatnot). I
 
 
 
-// // TEST from GitHub
-// const event = events();
-// autoComplete();
-// const submit = document.getElementById('searchbtn');
-// submit.addEventListener('click', event.getLocation.bind(this, 'search'));
 
-// const events = function events() {
-//     function showFlow(data) {
-//       dom().clearForms();
-//       dom().fillCard(data);
-//       dom().imageSwitch(data, 'image');
-//       dom().show('search');
-//     }
-  
-//     function forecastFlow(data) {
-//       dom().clearForms();
-//       dom().createCard(data);
-//       dom().show('forecast');
-//     }
-  
-//     async function getSearch(city) {
-//       try {
-//         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
-//         const response = await fetch(url, { mode: 'cors' });
-//         const cityData = await response.json();
-//         showFlow(cityData);
-//       } catch (error) {
-//         console.error('Error:', error);
-//         alert('Pa ka trouvé vilaj-la');
-//       }
-//     }
-  
-//     function getLocation() {
-//       const city = (document.getElementById('searchbar').value);
-//       getSearch(city);
-//     }
-  
-//     async function getForecast() {
-//       try {
-//         const value = (document.getElementById('searchbar').value);
-//         const url = `https://api.openweathermap.org/data/2.5/forecast?q=${value}&appid=82005d27a116c2880c8f0fcb866998a0&units=imperial`;
-//         const response = await fetch(url, { mode: 'cors' });
-//         const cityData = await response.json();
-//         forecastFlow(cityData);
-//       } catch (error) {
-//         console.error('Error:', error);
-//         alert('Pa ka trouvé vilaj-la');
-//       }
-//     }
-  
-  
-//     return {
-//       getSearch, showFlow, getForecast, getLocation,
-//     };
-//   };
