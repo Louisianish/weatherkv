@@ -18,7 +18,7 @@ The lines I've added begin on line 75 in the section entitled "Kouri-Vini transl
 ☑️ Rebuild into widget || web app || mobile app <br>
 ☑️ Consider other API options <br>
 
-I realize there may be an easier way to accomplish this, but the 'replace()' method and 'if else' were the best I could do with my limited knowledge. I tried doing it with key/value pairs, but I couldn't quite figure out how to get it to do what I wanted. Suggestions are always more than welcome! I'm eager to learn and improve!
+I realize there may be an easier way to accomplish manually translating the weather descriptions, but the 'replace()' method and 'if else' were the best I could do with my limited knowledge of JavaScript. I tried doing it with key/value pairs, but I couldn't quite figure out how to get it to do what I wanted. Suggestions are always more than welcome! I'm eager to learn and improve!
 
 -- Louisianish
 
