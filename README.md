@@ -13,6 +13,7 @@ To do list for Phase 1: <br>
 ✅ Add form for option to input a city <br>
 ☑️ Add state and country search to API link <br>
 ☑️ Add more CSS <br>
+
 To do list for Phase 2: <br>
 ☑️ <br>
 ☑️ Add more CSS <br>
