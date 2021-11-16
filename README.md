@@ -1,4 +1,4 @@
-# WeatherApp.KV
+# WeatherApp.KV - Weather app in Louisiana Creole, a.k.a. Kouri-Vini
 
 Bonjou, toukèkènn!
 
