@@ -6,7 +6,7 @@ Weather app originally created by CodeExplained (https://github.com/CodeExplaine
 
 The lines I've added begin on line 75 in the section entitled "Kouri-Vini translations."
 
-<b>To do list for Phase 1:<b> <br>
+<b>To do list for Phase 1:</b> <br>
 ✅ Translate all weather descriptions into Louisiana Creole <br>
 ✅ Make it start out with Fahrenheit upon loading <br>
 ✅ Add note under temperature that says "click to change units" <br>
@@ -14,7 +14,7 @@ The lines I've added begin on line 75 in the section entitled "Kouri-Vini transl
 ☑️ Add state and country search to API link <br>
 ☑️ Add more CSS <br>
 
-<b>To do list for Phase 2:<b> <br>
+<b>To do list for Phase 2:</b> <br>
 ☑️ <br>
 ☑️ Add more CSS <br>
 
