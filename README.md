@@ -2,7 +2,7 @@
 
 Bonjou, toukèkènn!
 
-Weather app originally created by CodeExplained (https://github.com/CodeExplainedRepo/Weather-App-JavaScript) using the OpenWeather API (https://openweathermap.org/api) to which I have added translations of weather descriptions in Kouri-Vini (Louisiana Creole). Please let me know if any of my translations aren't showing up correctly. Byin mèsi. :)
+Weather app originally created by CodeExplained (https://github.com/CodeExplainedRepo/Weather-App-JavaScript) using the OpenWeather API (https://openweathermap.org/api) to which I have added translations of weather descriptions in Kouri-Vini (Louisiana Creole) and a location search bar. Please let me know if any of my translations aren't showing up correctly. Byin mèsi. :)
 
 The lines I've added begin on line 75 in the section entitled "Kouri-Vini translations."
 
@@ -16,6 +16,7 @@ The lines I've added begin on line 75 in the section entitled "Kouri-Vini transl
 
 <b>To do list for Phase 2:</b> <br>
 ☑️ Rebuild into widget || web app || mobile app <br>
+☑️ Consider other API options <br>
 
 I realize there may be an easier way to accomplish this, but the 'replace()' method and 'if else' were the best I could do with my limited knowledge. I tried doing it with key/value pairs, but I couldn't quite figure out how to get it to do what I wanted. Suggestions are always more than welcome! I'm eager to learn and improve!
 
