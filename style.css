@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #001e33;
+    background-color: #000a33;
 }
 
 .app-name {
@@ -16,7 +16,7 @@ body {
 
 .container {
     width: 300px;
-    background-color: #ccecff;
+    background-color: #e6ebff;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
@@ -34,7 +34,7 @@ body {
     text-align: center;
     padding: 5px;
     margin: 0 auto;
-    color: #001e33;
+    color: #000a33;
     font-size: 1em;
 }
 
@@ -46,7 +46,7 @@ body {
     margin: 0;
     padding-top: 0;
     padding: 10px auto 5px auto;
-    color: #001e33;
+    color: #000a33;
     font-size: 1.5em;
     text-align: center;
 }
@@ -67,7 +67,7 @@ body {
 .weather-container {
     width: 300px;
     height: 300px;
-    background-color: #ccecff;
+    background-color: #e6ebff;
 }
 
 .weather-icon {
@@ -91,7 +91,7 @@ body {
     padding-top: 30px;
     padding-bottom: 10px;
     margin: 0;
-    color: #001e33;
+    color: #000a33;
     font-size: 1.4em;
     text-align: center;
 }
@@ -104,7 +104,7 @@ body {
 .temperature-value p {
     padding: 0;
     margin: 0;
-    color: #001e33;
+    color: #000a33;
     font-size: 4em;
     text-align: center;
     cursor: pointer;
@@ -115,12 +115,12 @@ body {
 } */
 
 .temperature-value span {
-    color: #001e33;
+    color: #000a33;
     font-size: 0.5em;
 }
 
 .temperature-switch p {
-    color: #001e33;
+    color: #000a33;
     font-size: 0.8em;
     text-align: center;
 }
@@ -132,7 +132,7 @@ body {
 }
 
 #searchbar {
-    border: 1.5px solid #001e33;
+    border: 1.5px solid #000a33;
     border-radius: 24px;
     font-family: "Rimouski";
     font-size: 100%;
@@ -141,17 +141,17 @@ body {
 
 .button {
     margin: 0.5em;
-    color: #001e33;
-    background: #e6f4ff;
+    color: #000a33;
+    background: #f2f2f2;
     border-radius: 50%;
-    border: 1.5px solid #001e33;
+    border: 1.5px solid #000a33;
     height: 2.5em;
     width: 2.5em;
 }
 
 .button:hover {
-    color: #e6f4ff;
-    background: #001e33;
+    color: #f2f2f2;
+    background: #000a33;
     cursor: pointer;
 }
 
