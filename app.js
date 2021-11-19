@@ -87,6 +87,16 @@ function displayWeather(){
     // Kouri-Vini translations - Added by Louisianish
     let text = document.getElementById("kourivini").innerHTML;
 
+    // // Working on reworking the text replacement code below, but not sure how to do it yet
+    // document.getElementById("kourivini").innerHTML = {
+    //     "clear sky" :  "syèl klær",
+    //     "few clouds" :  "kèk miriyaj",
+    //     "scattered clouds" :  "kèk miriyaj",
+    //     "broken clouds" :  "kèk miriyaj",
+    //     "overcast clouds" :  "kouvær",
+    //     "shower rain" :  "lavalas"
+    // }
+
     // Clear - 01d & 01n
     if(text == "clear sky")
     document.getElementById("kourivini").innerHTML = text.replace(text, "syèl klær");
@@ -98,9 +108,9 @@ function displayWeather(){
         document.getElementById("kourivini").innerHTML = text.replace(text, "kèk miriyaj");
     // Clouds - 04d & 04n
     else if(text == "broken clouds")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "kouvær");
+    document.getElementById("kourivini").innerHTML = text.replace(text, "kouvær");
     else if(text == "overcast clouds")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "kouvær");
+    document.getElementById("kourivini").innerHTML = text.replace(text, "kouvær");
     // Drizzle & Rain - 09d & 09n
     else if(text == "shower rain")
         document.getElementById("kourivini").innerHTML = text.replace(text, "lavalas");
