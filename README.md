@@ -12,7 +12,7 @@ The lines I've added begin on line 75 in the section entitled "Kouri-Vini transl
 ✅ Add note under temperature that says "click to change units" <br>
 ✅ Add form for option to input a city <br>
 ✅ Add state and country search to API link <br>
-✅ Set weather description to display "briyan" ("sunny") during daytime hours rather than "syèl klær" <br>
+✅ Set weather description to display "plin soléy" ("sunny") during daytime hours rather than "syèl klær" <br>
 ☑️ To paraphrase Mark Watney in 'The Martian': "I'm gonna have to [CSS] the shit out of this." <br>
 
 <b>To do list for Phase 2:</b> <br>
