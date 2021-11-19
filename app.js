@@ -84,6 +84,7 @@ function displayWeather(){
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 
+
     // Kouri-Vini translations - Added by Louisianish
     let text = document.getElementById("kourivini").innerHTML;
 
@@ -98,8 +99,11 @@ function displayWeather(){
     // }
 
     // Clear - 01d & 01n
-    if(text == "clear sky")
-    document.getElementById("kourivini").innerHTML = text.replace(text, "syèl klær");
+    // Set weather description to display "plin soléy" ("sunny") during daytime hours rather than "syèl klær"
+    if  (iconElement.innerHTML = `<img src="icons/01d.png"/>`)
+        document.getElementById("kourivini").innerHTML = text.replace(text, "plin soléy");
+    else if (text == "clear sky")
+        document.getElementById("kourivini").innerHTML = text.replace(text, "syèl klær");
     // Clouds - 02d & 02n
     else if(text == "few clouds")
         document.getElementById("kourivini").innerHTML = text.replace(text, "kèk miriyaj");
@@ -218,6 +222,7 @@ function displayWeather(){
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
     else if(text == "sand/dust whirls")
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
+
 }
 
 // F to C conversion - Added by Louisianish
