@@ -262,7 +262,7 @@ form.addEventListener('submit', function(event) {
 
   var searchbar = document.getElementById('searchbar').value
 
-  console.log(searchbar)
+  console.log(searchbar);
 })
 
 // Add a function for city to be submitted upon pressing 'Enter'
