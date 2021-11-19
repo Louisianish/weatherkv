@@ -144,6 +144,7 @@ body {
 .button {
     margin: 0.5em;
     color: #293251;
+    background: #eef0f6;
     border-radius: 50%;
     border: 1.5px solid #293251;
     height: 2.5em;
@@ -151,8 +152,8 @@ body {
 }
 
 .button:hover {
+    color: #eef0f6;
     background: #293251;
-    color: white;
     cursor: pointer;
 }
 
