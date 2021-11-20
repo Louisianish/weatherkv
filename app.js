@@ -231,6 +231,12 @@ function displayWeather(){
         document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Shikago, Ozilinwa");
     else if(locationElement.innerHTML == "Matteson, US")
         document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Matteson, Ozilinwa");
+    else if(locationElement.innerHTML == "Niceville, US")
+        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Vayanvil, Laflorid");
+    else if(locationElement.innerHTML == "Paris, FR")
+        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Pari, Lafrans");
+    else if(locationElement.innerHTML == "London, GB")
+        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Lalonn, Langlotær");
 
 }
 
