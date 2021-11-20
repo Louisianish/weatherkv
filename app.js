@@ -100,9 +100,9 @@ function displayWeather(){
 
     // Clear - 01d & 01n
     // Set weather description to display "plin soléy" ("sunny") during daytime hours rather than "syèl klær"
-    if  (iconElement.innerHTML = `<img src="icons/01d.png"/>`)
+    if(iconElement.innerHTML = `<img src="icons/01d.png"/>`)
         document.getElementById("kourivini").innerHTML = text.replace(text, "plin soléy");
-    else if (text == "clear sky")
+    else if(text == "clear sky")
         document.getElementById("kourivini").innerHTML = text.replace(text, "syèl klær");
     // Clouds - 02d & 02n
     else if(text == "few clouds")
@@ -228,7 +228,9 @@ function displayWeather(){
     let cityKv = document.getElementById("location").innerHTML;
 
     if(locationElement.innerHTML == "Chicago, US")
-    document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Shikago, Olinwa");
+        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Shikago, Olinwa");
+    else if(locationElement.innerHTML == "Matteson, US")
+    document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Matteson, Olinwa");
 
 }
 
