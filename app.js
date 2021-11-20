@@ -290,8 +290,6 @@ form.addEventListener('submit', function(event) {
 })
 
 // Add a function for city to be submitted upon pressing 'Enter'
-
-
 document
     .querySelector(".button")
     .addEventListener("click", function () {
@@ -300,7 +298,7 @@ document
         const state = (document.getElementById('searchbar').value);
         const country = (document.getElementById('searchbar').value);
         let apiCity = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${city},${state},${country}&appid=${key}&units=imperial`;
-        
+
         console.log(apiCity);
         
         fetch(apiCity)
