@@ -237,7 +237,10 @@ function displayWeather(){
         document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Pari, Lafrans");
     else if(locationElement.innerHTML == "London, GB")
         document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Lalonn, Langlotær");
-
+    else if(locationElement.innerHTML == "Salt Lake City, US")
+        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Olak-Salé, Litò");
+    else if(locationElement.innerHTML == "Salt Lake, US")
+        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Olak-Salé, Litò");
 }
 
 // F to C conversion - Added by Louisianish
