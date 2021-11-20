@@ -223,6 +223,13 @@ function displayWeather(){
     else if(text == "sand/dust whirls")
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
 
+
+    // City names in Kouri-Vini - Added by Louisianish
+    let cityKv = document.getElementById("location").innerHTML;
+
+    if(locationElement.innerHTML == "Chicago, US")
+    document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Shikago, Olinwa");
+
 }
 
 // F to C conversion - Added by Louisianish
