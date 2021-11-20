@@ -228,9 +228,9 @@ function displayWeather(){
     let cityKv = document.getElementById("location").innerHTML;
 
     if(locationElement.innerHTML == "Chicago, US")
-        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Shikago, Olinwa");
+        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Shikago, Ozilinwa");
     else if(locationElement.innerHTML == "Matteson, US")
-    document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Matteson, Olinwa");
+        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Matteson, Ozilinwa");
 
 }
 
