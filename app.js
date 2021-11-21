@@ -223,7 +223,6 @@ function displayWeather(){
     else if(text == "sand/dust whirls")
         document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
 
-
     // City names in Kouri-Vini - Added by Louisianish
     let cityKv = document.getElementById("location").innerHTML;
 
