@@ -2,7 +2,7 @@
 // Alterations by Louisianish - See the following sections:
 // - "Kouri-Vini weather description translations"
 // - "when Fahrenheit is displayed upon loading"
-// - "search for city"
+// - "Search for a city"
 // - "Add a function for city to be submitted upon pressing 'Enter'"
 // To see my Louisiana Creole weather app, visit https://louisianish.github.io/weatherapp.kv/
 // To view this GitHub repository with the README and my weather translation template, visit https://github.com/Louisianish/weatherapp.kv
