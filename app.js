@@ -92,7 +92,6 @@ function displayWeather() {
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 
-
     // Kouri-Vini weather description translations - Added by Louisianish
     let text = document.getElementById("kourivini").innerHTML;
 
