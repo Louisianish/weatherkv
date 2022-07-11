@@ -1,4 +1,4 @@
- // This is a language translation template for the OpenWeatherMap API. Insert your own translations for the weather descriptions in the language of your choice.
+ // This is a language translation template by Michael Gisclair, a.k.a. "Louisianish" for the OpenWeatherMap API. Insert your own translations for the weather descriptions in the language of your choice.
  // Link for OpenWeatherMap API weather descriptions: https://openweathermap.org/weather-conditions
  
  // In HTML file, add an id attribute to the paragraph tag that lies within the div with the class entitled "temperature-description." Name the ID after your language or whatever you want.
