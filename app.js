@@ -81,11 +81,11 @@ function getWeather(latitude, longitude) {
 // Location protocol - Added by Louisianish
 // var location;
 // var url;
-// if (location.protocol === 'http:') {
-//     url = 'http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=imperial';
-// } else {
-//     url = 'https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=imperial';
-// }
+if (location.protocol === 'http:') {
+    url = 'http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=imperial';
+} else {
+    url = 'https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=imperial';
+}
 
 // DISPLAY WEATHER TO UI
 function displayWeather() {
