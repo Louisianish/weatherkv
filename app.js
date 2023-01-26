@@ -100,7 +100,7 @@ function displayWeather() {
     // Clear - 01d & 01n
     // Set weather description to display "plin soléy" ("sunny") during daytime hours rather than "syèl klær"
     if(text == "clear sky" && weather.iconId == "01d")
-        document.getElementById("kourivini").innerHTML = "vrémen sho";
+        text = "jolimen briyan";
     else if(text == "clear sky" && weather.iconId == "01n")
         document.getElementById("kourivini").innerHTML = text.replace(text, "syèl klær");
     // Clouds - 02d & 02n
