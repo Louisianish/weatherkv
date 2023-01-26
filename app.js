@@ -72,7 +72,7 @@ function getWeather(latitude, longitude) {
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
             weather.country = data.sys.country;
-            weather.state = data.sys.state;
+            weather.state = data.state;
         })
         .then(function() {
             displayWeather();
@@ -95,7 +95,7 @@ function displayWeather() {
     descElement.innerHTML = weather.description;
     // Display state if city is in U.S.
     if (weather.country == "US") {
-        locationElement.innerHTML = `${weather.city}, U.S.`;
+        locationElement.innerHTML = `${weather.city}, ${weather.state}`;
     } else {
         locationElement.innerHTML = `${weather.city}, ${weather.country}`;
     }
@@ -324,7 +324,7 @@ document
                 weather.iconId = data.weather[0].icon;
                 weather.city = data.name;
                 weather.country = data.sys.country;
-                weather.state = data.sys.state;
+                weather.state = data.state;
             })
             .then(function(){
                 displayWeather();
