@@ -100,7 +100,7 @@ function displayWeather() {
     // Clear - 01d & 01n
     // Set weather description to display "plin soléy" ("sunny") during daytime hours rather than "syèl klær"
     if(text == "clear sky" && weather.iconId == "01d")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "plin soléy");
+        document.getElementById("kourivini").innerHTML = "vrémen sho";
     else if(text == "clear sky" && weather.iconId == "01n")
         document.getElementById("kourivini").innerHTML = text.replace(text, "syèl klær");
     // Clouds - 02d & 02n
@@ -325,9 +325,9 @@ document
         });
 })
 
-// Fetch city-list.js file for city and U.S. state translations
-const cities = fetch('city-list.js');
+// // Fetch city-list.js file for city and U.S. state translations
+// const cities = fetch('city-list.js');
 
-if (cities.city.state === "FL") {
-    document.getElementById("location").innerHTML = cityKv.replace(cityKv, `${city.name}, Laflorid`);
-}
+// if (cities.city.state === "FL") {
+//     document.getElementById("location").innerHTML = cityKv.replace(cityKv, `${city.name}, Laflorid`);
+// }
