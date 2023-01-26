@@ -72,7 +72,6 @@ function getWeather(latitude, longitude) {
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
             weather.country = data.sys.country;
-            weather.state = data.state;
         })
         .then(function() {
             displayWeather();
@@ -93,7 +92,27 @@ function displayWeather() {
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}°<span>F</span>`;
     descElement.innerHTML = weather.description;
+    locationElement.innerHTML = `${weather.city}, ${weather.country}`;
     // Display state if city is in U.S.
+    let apiCity = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${city},${state},${country}&appid=${key}&units=imperial`;
+        
+        fetch(apiCity)
+            .then(function(response){
+                let data = response.json();
+                return data
+            .then(function(data) {
+                weather.temperature.value = Math.floor(data.main.temp);
+                weather.description = data.weather[0].description;
+                weather.iconId = data.weather[0].icon;
+                weather.city = data.name;
+                weather.country = data.sys.country;
+                weather.state = data.state;
+            })
+            .then(function(){
+                displayWeather();
+            });   
+        });
+        
     if (weather.country == "US") {
         locationElement.innerHTML = `${weather.city}, ${weather.state}`;
     } else {
@@ -324,7 +343,6 @@ document
                 weather.iconId = data.weather[0].icon;
                 weather.city = data.name;
                 weather.country = data.sys.country;
-                weather.state = data.state;
             })
             .then(function(){
                 displayWeather();
