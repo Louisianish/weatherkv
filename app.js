@@ -326,8 +326,8 @@ document
 })
 
 // Fetch city-list.js file for city and U.S. state translations
-fetch('city-list.js');
+const cities = fetch('city-list.js');
 
-if (city.state === "FL") {
+if (cities.city.state === "FL") {
     document.getElementById("location").innerHTML = cityKv.replace(cityKv, `${city.name}, Laflorid`);
 }
