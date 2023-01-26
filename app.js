@@ -100,127 +100,127 @@ function displayWeather() {
     // Clear - 01d & 01n
     // Set weather description to display "plin soléy" ("sunny") during daytime hours rather than "syèl klær"
     if(text == "clear sky" && weather.iconId == "01d")
-        document.getElementById("kourivini").innerHTML = "jolimen briyan";
+        document.getElementById("kourivini").innerHTML = "plin soléy";
     else if(text == "clear sky" && weather.iconId == "01n")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "syèl klær");
+        document.getElementById("kourivini").innerHTML = "syèl klær";
     // Clouds - 02d & 02n
     if(text == "few clouds")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "kèk miriyaj");
+        document.getElementById("kourivini").innerHTML = "kèk miriyaj";
     // Clouds - 03d & 03n
     else if(text == "scattered clouds")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "kèk miriyaj");
+        document.getElementById("kourivini").innerHTML = "kèk miriyaj";
     // Clouds - 04d & 04n
     else if(text == "broken clouds")
-    document.getElementById("kourivini").innerHTML = text.replace(text, "kouvær");
+    document.getElementById("kourivini").innerHTML = "kouvær";
     else if(text == "overcast clouds")
-    document.getElementById("kourivini").innerHTML = text.replace(text, "kouvær");
+    document.getElementById("kourivini").innerHTML = "kouvær";
     // Drizzle & Rain - 09d & 09n
     else if(text == "shower rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lavalas");
+        document.getElementById("kourivini").innerHTML = "lavalas";
     else if(text == "light intensity shower rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "ti lavalas");
+        document.getElementById("kourivini").innerHTML = "ti lavalas";
     else if(text == "heavy intensity shower rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro lavalas");
+        document.getElementById("kourivini").innerHTML = "gro lavalas";
     else if(text == "ragged shower rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lavalas");
+        document.getElementById("kourivini").innerHTML = "lavalas";
     else if(text == "light intensity drizzle")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "ti grènnas");
+        document.getElementById("kourivini").innerHTML = "ti grènnas";
     else if(text == "drizzle")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "grènnas");
+        document.getElementById("kourivini").innerHTML = "grènnas";
     else if(text == "heavy intensity drizzle")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro grènnas");
+        document.getElementById("kourivini").innerHTML = "gro grènnas";
     else if(text == "light intensity drizzle rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "ti grènnas");
+        document.getElementById("kourivini").innerHTML = "ti grènnas";
     else if(text == "drizzle rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "grènnas");
+        document.getElementById("kourivini").innerHTML = "grènnas";
     else if(text == "heavy intensity drizzle rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro grènnas");
+        document.getElementById("kourivini").innerHTML = "gro grènnas";
     else if(text == "shower rain and drizzle")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lavalas");
+        document.getElementById("kourivini").innerHTML = "lavalas";
     else if(text == "heavy shower rain and drizzle")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro lavalas");
+        document.getElementById("kourivini").innerHTML = "gro lavalas";
     else if(text == "shower drizzle")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "ti lavalas");
+        document.getElementById("kourivini").innerHTML = "ti lavalas";
     // Rain - 10d & 10n
     else if(text == "rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lapli");
+        document.getElementById("kourivini").innerHTML = "lapli";
     else if(text == "light rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "ti lagrènn");
-    else if(text == "moderate rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lapli moyin");
+        document.getElementById("kourivini").innerHTML = "ti lagrènn";
+    else if(text == "moderate rain")"ti lagrènn"
+        document.getElementById("kourivini").innerHTML = "lapli moyin";
     else if(text == "heavy intensity rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro lapli");
+        document.getElementById("kourivini").innerHTML = "gro lapli";
     else if(text == "very heavy rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro lapli");
+        document.getElementById("kourivini").innerHTML = "gro lapli";
     else if(text == "extreme rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro lapli");
+        document.getElementById("kourivini").innerHTML = "gro lapli";
     // Thunderstorm - 11d & 11n
     else if(text == "thunderstorm")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "loragan tonnær");
+        document.getElementById("kourivini").innerHTML = "loragan tonnær";
     else if(text == "light thunderstorm")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "loragan tonnær fèb");
+        document.getElementById("kourivini").innerHTML = "loragan tonnær fèb";
     else if(text == "ragged thunderstorm")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "loragan tonnær");
+        document.getElementById("kourivini").innerHTML = "loragan tonnær";
     else if(text == "heavy thunderstorm")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro loragan tonnær");
+        document.getElementById("kourivini").innerHTML = "gro loragan tonnær";
     else if(text == "thunderstorm with rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "loragan tonnær ak lapli");
+        document.getElementById("kourivini").innerHTML = "loragan tonnær ak lapli";
     else if(text == "thunderstorm with light rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "loragan tonnær ak ti grènn");
+        document.getElementById("kourivini").innerHTML = "loragan tonnær ak ti grènn";
     else if(text == "thunderstorm with heavy rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "loragan tonnær ak gro lapli");
+        document.getElementById("kourivini").innerHTML = "loragan tonnær ak gro lapli";
     else if(text == "thunderstorm with drizzle")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "loragan tonnær ak grènnas");
+        document.getElementById("kourivini").innerHTML = "loragan tonnær ak grènnas";
     else if(text == "thunderstorm with light drizzle")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "loragan tonnær ak ti grènnas");
+        document.getElementById("kourivini").innerHTML = "loragan tonnær ak ti grènnas";
     else if(text == "thunderstorm with heavy drizzle")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "loragan tonnær ak lapli");
+        document.getElementById("kourivini").innerHTML = "loragan tonnær ak lapli";
     // Snow - 13d & 13n
     else if(text == "snow")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lanèj");
+        document.getElementById("kourivini").innerHTML = "lanèj";
     else if(text == "freezing rain")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lapli glasé");
+        document.getElementById("kourivini").innerHTML = "lapli glasé";
     else if(text == "light snow")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "ti grènn lanèj");
+        document.getElementById("kourivini").innerHTML = "ti grènn lanèj";
     else if(text == "heavy snow")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro lanèj");
+        document.getElementById("kourivini").innerHTML = "gro lanèj";
     else if(text == "sleet")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "værglan");
+        document.getElementById("kourivini").innerHTML = "værglan";
     else if(text == "light shower sleet")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "værglan");
+        document.getElementById("kourivini").innerHTML = "værglan";
     else if(text == "shower sleet")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "værglan");
+        document.getElementById("kourivini").innerHTML = "værglan";
     else if(text == "light rain and snow")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "ti grènn ak lanèj");
+        document.getElementById("kourivini").innerHTML = "ti grènn ak lanèj";
     else if(text == "rain and snow")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lapli ak lanèj");
+        document.getElementById("kourivini").innerHTML = "lapli ak lanèj";
     else if(text == "light shower snow")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "ti grènn lanèj");
+        document.getElementById("kourivini").innerHTML = "ti grènn lanèj";
     else if(text == "shower snow")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lavalas lanèj");
+        document.getElementById("kourivini").innerHTML = "lavalas lanèj";
     else if(text == "heavy shower snow")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "gro lavalas lanèj");
+        document.getElementById("kourivini").innerHTML = "gro lavalas lanèj";
     // Atmosphere - 50d & 50n
     else if(text == "mist")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "brouyar");
+        document.getElementById("kourivini").innerHTML = "brouyar";
     else if(text == "haze")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "brouyar");
+        document.getElementById("kourivini").innerHTML = "brouyar";
     else if(text == "fog")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "brouyar");
+        document.getElementById("kourivini").innerHTML = "brouyar";
     else if(text == "smoke")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "boukann");
+        document.getElementById("kourivini").innerHTML = "boukann";
     else if(text == "dust")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lapousyær");
+        document.getElementById("kourivini").innerHTML = "lapousyær";
     else if(text == "sand")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lasab");
+        document.getElementById("kourivini").innerHTML = "lasab";
     else if(text == "volcanic ash")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "lasenn volkanik");
+        document.getElementById("kourivini").innerHTML = "lasenn volkanik";
     else if(text == "squalls")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "bouras");
+        document.getElementById("kourivini").innerHTML = "bouras";
     else if(text == "tornado")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
+        document.getElementById("kourivini").innerHTML = "tourbiyon";
     else if(text == "sand/dust whirls")
-        document.getElementById("kourivini").innerHTML = text.replace(text, "tourbiyon");
+        document.getElementById("kourivini").innerHTML = "tourbiyon";
 
     // City names in Kouri-Vini - Added by Louisianish
     let cityKv = document.getElementById("location").innerHTML;
