@@ -94,27 +94,20 @@ function displayWeather() {
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
     // Display state if city is in U.S.
-    let apiCity = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${city},${state},${country}&appid=${key}&units=imperial`;
+    // let apiCity = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${city},${state},${country}&appid=${key}&units=imperial`;
         
-        fetch(apiCity)
-            .then(function(response){
-                let data = response.json();
-                return data
-            .then(function(data) {
-                weather.temperature.value = Math.floor(data.main.temp);
-                weather.description = data.weather[0].description;
-                weather.iconId = data.weather[0].icon;
-                weather.city = data.name;
-                weather.country = data.sys.country;
-                weather.state = data.state;
-            })
-            .then(function(){
-                displayWeather();
-            });   
-        });
-        
+    fetch('city.list.json')
+        .then(function(response){
+            let data = response.json();
+            return data;
+        })
+        .then(function(data) {
+            state.code = data.state;
+        });   
+    });
+
     if (weather.country == "US") {
-        locationElement.innerHTML = `${weather.city}, ${weather.state}`;
+        locationElement.innerHTML = `${weather.city}, ${state.code}`;
     } else {
         locationElement.innerHTML = `${weather.city}, ${weather.country}`;
     }
@@ -336,7 +329,8 @@ document
         fetch(apiCity)
             .then(function(response){
                 let data = response.json();
-                return data
+                return data;
+            })
             .then(function(data) {
                 weather.temperature.value = Math.floor(data.main.temp);
                 weather.description = data.weather[0].description;
