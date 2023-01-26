@@ -93,24 +93,25 @@ function displayWeather() {
     tempElement.innerHTML = `${weather.temperature.value}°<span>F</span>`;
     descElement.innerHTML = weather.description;
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+    
     // Display state if city is in U.S.
     // let apiCity = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${city},${state},${country}&appid=${key}&units=imperial`;
         
-    fetch('city.list.json')
-        .then(function(response){
-            let data = response.json();
-            return data;
-        })
-        .then(function(data) {
-            state.code = data.state;
-        });   
-    });
+    // fetch('city.list.json')
+    //     .then(function(response){
+    //         let data = response.json();
+    //         return data;
+    //     })
+    //     .then(function(data) {
+    //         state.code = data.state;
+    //     });   
+    // });
 
-    if (weather.country == "US") {
-        locationElement.innerHTML = `${weather.city}, ${state.code}`;
-    } else {
-        locationElement.innerHTML = `${weather.city}, ${weather.country}`;
-    }
+    // if (weather.country == "US") {
+    //     locationElement.innerHTML = `${weather.city}, ${state.code}`;
+    // } else {
+    //     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+    // }
 
     // Kouri-Vini weather description translations - Added by Louisianish
     let text = document.getElementById("kourivini").innerHTML;
