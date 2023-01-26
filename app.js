@@ -95,7 +95,7 @@ function displayWeather() {
     descElement.innerHTML = weather.description;
     // Display state if city is in U.S.
     if (weather.country == "US") {
-        locationElement.innerHTML = `${weather.city}, ${weather.state}`;
+        locationElement.innerHTML = `${weather.city}, U.S.`;
     } else {
         locationElement.innerHTML = `${weather.city}, ${weather.country}`;
     }
