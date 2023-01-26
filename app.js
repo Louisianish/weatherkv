@@ -72,6 +72,7 @@ function getWeather(latitude, longitude) {
             weather.iconId = data.weather[0].icon;
             weather.city = data.name;
             weather.country = data.sys.country;
+            weather.state = data.sys.state;
         })
         .then(function() {
             displayWeather();
@@ -92,7 +93,12 @@ function displayWeather() {
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}°<span>F</span>`;
     descElement.innerHTML = weather.description;
-    locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+    // Display state if city is in U.S.
+    if (weather.country == "US") {
+        locationElement.innerHTML = `${weather.city}, ${weather.state}`;
+    } else {
+        locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+    }
 
     // Kouri-Vini weather description translations - Added by Louisianish
     let text = document.getElementById("kourivini").innerHTML;
@@ -223,22 +229,22 @@ function displayWeather() {
         document.getElementById("kourivini").innerHTML = "tourbiyon";
 
     // City names in Kouri-Vini - Added by Louisianish
-    let cityKv = document.getElementById("location").innerHTML;
+    // let cityKv = document.getElementById("location").innerHTML;
 
     if(locationElement.innerHTML == "Chicago, US")
-        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Shikago, Ozilinwa");
+        document.getElementById("location").innerHTML = "Shikago, Ozilinwa";
     else if(locationElement.innerHTML == "Matteson, US")
-        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Matteson, Ozilinwa");
+        document.getElementById("location").innerHTML = "Matteson, Ozilinwa";
     else if(locationElement.innerHTML == "Niceville, US")
-        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Vayanvil, Laflorid");
+        document.getElementById("location").innerHTML = "Vayanvil, Laflorid";
     else if(locationElement.innerHTML == "Paris, FR")
-        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Pari, Lafrans");
+        document.getElementById("location").innerHTML = "Pari, Lafrans";
     else if(locationElement.innerHTML == "London, GB")
-        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Lalonn, Langlotær");
+        document.getElementById("location").innerHTML = "Lalonn, Langlotær";
     else if(locationElement.innerHTML == "Salt Lake City, US")
-        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Olak-Salé, Litò");
+        document.getElementById("location").innerHTML = "Olak-Salé, Litò";
     else if(locationElement.innerHTML == "Salt Lake, US")
-        document.getElementById("location").innerHTML = cityKv.replace(cityKv, "Olak-Salé, Litò");
+        document.getElementById("location").innerHTML = "Olak-Salé, Litò";
 }
 
 // F to C conversion - Added by Louisianish
@@ -318,6 +324,7 @@ document
                 weather.iconId = data.weather[0].icon;
                 weather.city = data.name;
                 weather.country = data.sys.country;
+                weather.state = data.sys.state;
             })
             .then(function(){
                 displayWeather();
@@ -329,5 +336,5 @@ document
 // const cities = fetch('city-list.js');
 
 // if (cities.city.state === "FL") {
-//     document.getElementById("location").innerHTML = cityKv.replace(cityKv, `${city.name}, Laflorid`);
+//     document.getElementById("location").innerHTML = `${city.name}, Laflorid`);
 // }
