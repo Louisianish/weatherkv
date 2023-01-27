@@ -9,7 +9,7 @@ body {
 .app-name {
     font-size: 1.5em;
     color: white;
-    text-align: center;
+     dtext-align: center;
     margin-top: 30px;
     margin-bottom: 0;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 .app-title p {
-    text-align: center;
+     dtext-align: center;
     padding: 5px;
     margin: 0 auto;
     color: #000a33;
@@ -48,20 +48,19 @@ body {
     padding: 10px auto 5px auto;
     color: #000a33;
     font-size: 1.5em;
-    text-align: center;
+     dtext-align: center;
 }
 
 .notification {
     background-color: #f8d7da;
     display: none;
-    margin: 0 auto;
 }
 
 .notification p {
     color: #721c24;
     font-size: 1.2em;
     margin: 0;
-    text-align: center;
+     dtext-align: center;
     padding: 10px 0;
 }
 
@@ -94,7 +93,7 @@ body {
     margin: 0;
     color: #000a33;
     font-size: 1.4em;
-    text-align: center;
+     dtext-align: center;
 }
 
 .temperature-value {
@@ -107,7 +106,7 @@ body {
     margin: 0;
     color: #000a33;
     font-size: 4em;
-    text-align: center;
+     dtext-align: center;
     cursor: pointer;
 }
 
@@ -123,7 +122,7 @@ body {
 .temperature-switch p {
     color: #000a33;
     font-size: 0.8em;
-    text-align: center;
+     dtext-align: center;
 }
 
 #search {
