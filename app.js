@@ -58,6 +58,7 @@ function showError(error) {
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude) {
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=imperial`;
+    // let api = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${city},${state},${country}&appid=${key}&units=imperial`;
 
     console.log(api);
     
@@ -113,133 +114,133 @@ function displayWeather() {
     //     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
     // }
 
-    // Kouri-Vini weather description translations - Added by Louisianish
-    let weatherCondition = document.getElementById("kourivini").innerHTML;
+  // Kouri-Vini weather description translations - Added by Louisianish
+  let weatherCondition = document.getElementById("kourivini").innerHTML;
 
-    // Clear - 01d & 01n
-    // Set weather description to display "plin soléy" ("sunny") during daytime hours rather than "syèl klær"
-    if(weatherCondition == "clear sky" && weather.iconId == "01d")
-        document.getElementById("kourivini").innerHTML = "plin soléy";
-    else if(weatherCondition == "clear sky" && weather.iconId == "01n")
-        document.getElementById("kourivini").innerHTML = "syèl klær";
-    // Clouds - 02d & 02n
-    if(weatherCondition == "few clouds")
-        document.getElementById("kourivini").innerHTML = "kèk miriyaj";
-    // Clouds - 03d & 03n
-    else if(weatherCondition == "scattered clouds")
-        document.getElementById("kourivini").innerHTML = "kèk miriyaj";
-    // Clouds - 04d & 04n
-    else if(weatherCondition == "broken clouds")
-    document.getElementById("kourivini").innerHTML = "kouvær";
-    else if(weatherCondition == "overcast clouds")
-    document.getElementById("kourivini").innerHTML = "kouvær";
-    // Drizzle & Rain - 09d & 09n
-    else if(weatherCondition == "shower rain")
-        document.getElementById("kourivini").innerHTML = "lavalas";
-    else if(weatherCondition == "light intensity shower rain")
-        document.getElementById("kourivini").innerHTML = "ti lavalas";
-    else if(weatherCondition == "heavy intensity shower rain")
-        document.getElementById("kourivini").innerHTML = "gro lavalas";
-    else if(weatherCondition == "ragged shower rain")
-        document.getElementById("kourivini").innerHTML = "lavalas";
-    else if(weatherCondition == "light intensity drizzle")
-        document.getElementById("kourivini").innerHTML = "ti grènnas";
-    else if(weatherCondition == "drizzle")
-        document.getElementById("kourivini").innerHTML = "grènnas";
-    else if(weatherCondition == "heavy intensity drizzle")
-        document.getElementById("kourivini").innerHTML = "gro grènnas";
-    else if(weatherCondition == "light intensity drizzle rain")
-        document.getElementById("kourivini").innerHTML = "ti grènnas";
-    else if(weatherCondition == "drizzle rain")
-        document.getElementById("kourivini").innerHTML = "grènnas";
-    else if(weatherCondition == "heavy intensity drizzle rain")
-        document.getElementById("kourivini").innerHTML = "gro grènnas";
-    else if(weatherCondition == "shower rain and drizzle")
-        document.getElementById("kourivini").innerHTML = "lavalas";
-    else if(weatherCondition == "heavy shower rain and drizzle")
-        document.getElementById("kourivini").innerHTML = "gro lavalas";
-    else if(weatherCondition == "shower drizzle")
-        document.getElementById("kourivini").innerHTML = "ti lavalas";
-    // Rain - 10d & 10n
-    else if(weatherCondition == "rain")
-        document.getElementById("kourivini").innerHTML = "lapli";
-    else if(weatherCondition == "light rain")
-        document.getElementById("kourivini").innerHTML = "ti lagrènn";
-    else if(weatherCondition == "moderate rain")"ti lagrènn"
-        document.getElementById("kourivini").innerHTML = "lapli moyin";
-    else if(weatherCondition == "heavy intensity rain")
-        document.getElementById("kourivini").innerHTML = "gro lapli";
-    else if(weatherCondition == "very heavy rain")
-        document.getElementById("kourivini").innerHTML = "gro lapli";
-    else if(weatherCondition == "extreme rain")
-        document.getElementById("kourivini").innerHTML = "gro lapli";
-    // Thunderstorm - 11d & 11n
-    else if(weatherCondition == "thunderstorm")
-        document.getElementById("kourivini").innerHTML = "loragan tonnær";
-    else if(weatherCondition == "light thunderstorm")
-        document.getElementById("kourivini").innerHTML = "loragan tonnær fèb";
-    else if(weatherCondition == "ragged thunderstorm")
-        document.getElementById("kourivini").innerHTML = "loragan tonnær";
-    else if(weatherCondition == "heavy thunderstorm")
-        document.getElementById("kourivini").innerHTML = "gro loragan tonnær";
-    else if(weatherCondition == "thunderstorm with rain")
-        document.getElementById("kourivini").innerHTML = "loragan tonnær ak lapli";
-    else if(weatherCondition == "thunderstorm with light rain")
-        document.getElementById("kourivini").innerHTML = "loragan tonnær ak ti grènn";
-    else if(weatherCondition == "thunderstorm with heavy rain")
-        document.getElementById("kourivini").innerHTML = "loragan tonnær ak gro lapli";
-    else if(weatherCondition == "thunderstorm with drizzle")
-        document.getElementById("kourivini").innerHTML = "loragan tonnær ak grènnas";
-    else if(weatherCondition == "thunderstorm with light drizzle")
-        document.getElementById("kourivini").innerHTML = "loragan tonnær ak ti grènnas";
-    else if(weatherCondition == "thunderstorm with heavy drizzle")
-        document.getElementById("kourivini").innerHTML = "loragan tonnær ak lapli";
-    // Snow - 13d & 13n
-    else if(weatherCondition == "snow")
-        document.getElementById("kourivini").innerHTML = "lanèj";
-    else if(weatherCondition == "freezing rain")
-        document.getElementById("kourivini").innerHTML = "lapli glasé";
-    else if(weatherCondition == "light snow")
-        document.getElementById("kourivini").innerHTML = "ti grènn lanèj";
-    else if(weatherCondition == "heavy snow")
-        document.getElementById("kourivini").innerHTML = "gro lanèj";
-    else if(weatherCondition == "sleet")
-        document.getElementById("kourivini").innerHTML = "værglan";
-    else if(weatherCondition == "light shower sleet")
-        document.getElementById("kourivini").innerHTML = "værglan";
-    else if(weatherCondition == "shower sleet")
-        document.getElementById("kourivini").innerHTML = "værglan";
-    else if(weatherCondition == "light rain and snow")
-        document.getElementById("kourivini").innerHTML = "ti grènn ak lanèj";
-    else if(weatherCondition == "rain and snow")
-        document.getElementById("kourivini").innerHTML = "lapli ak lanèj";
-    else if(weatherCondition == "light shower snow")
-        document.getElementById("kourivini").innerHTML = "ti grènn lanèj";
-    else if(weatherCondition == "shower snow")
-        document.getElementById("kourivini").innerHTML = "lavalas lanèj";
-    else if(weatherCondition == "heavy shower snow")
-        document.getElementById("kourivini").innerHTML = "gro lavalas lanèj";
-    // Atmosphere - 50d & 50n
-    else if(weatherCondition == "mist")
-        document.getElementById("kourivini").innerHTML = "brouyar";
-    else if(weatherCondition == "haze")
-        document.getElementById("kourivini").innerHTML = "brouyar";
-    else if(weatherCondition == "fog")
-        document.getElementById("kourivini").innerHTML = "brouyar";
-    else if(weatherCondition == "smoke")
-        document.getElementById("kourivini").innerHTML = "boukann";
-    else if(weatherCondition == "dust")
-        document.getElementById("kourivini").innerHTML = "lapousyær";
-    else if(weatherCondition == "sand")
-        document.getElementById("kourivini").innerHTML = "lasab";
-    else if(weatherCondition == "volcanic ash")
-        document.getElementById("kourivini").innerHTML = "lasenn volkanik";
-    else if(weatherCondition == "squalls")
-        document.getElementById("kourivini").innerHTML = "bouras";
-    else if(weatherCondition == "tornado")
-        document.getElementById("kourivini").innerHTML = "tourbiyon";
-    else if(weatherCondition == "sand/dust whirls")
-        document.getElementById("kourivini").innerHTML = "tourbiyon";
+  // Clear - 01d & 01n
+  // Set weather description to display "plin soléy" ("sunny") during daytime hours rather than "syèl klær"
+  if (weatherCondition == "clear sky" && weather.iconId == "01d")
+      document.getElementById("kourivini").innerHTML = "plin soléy";
+  else if (weatherCondition == "clear sky" && weather.iconId == "01n")
+      document.getElementById("kourivini").innerHTML = "syèl klær";
+  // Clouds - 02d & 02n
+  if (weatherCondition == "few clouds")
+      document.getElementById("kourivini").innerHTML = "kèk miriyaj";
+  // Clouds - 03d & 03n
+  else if (weatherCondition == "scattered clouds")
+      document.getElementById("kourivini").innerHTML = "kèk miriyaj";
+  // Clouds - 04d & 04n
+  else if (weatherCondition == "broken clouds")
+  document.getElementById("kourivini").innerHTML = "kouvær";
+  else if (weatherCondition == "overcast clouds")
+  document.getElementById("kourivini").innerHTML = "kouvær";
+  // Drizzle & Rain - 09d & 09n
+  else if (weatherCondition == "shower rain")
+      document.getElementById("kourivini").innerHTML = "lavalas";
+  else if (weatherCondition == "light intensity shower rain")
+      document.getElementById("kourivini").innerHTML = "ti lavalas";
+  else if (weatherCondition == "heavy intensity shower rain")
+      document.getElementById("kourivini").innerHTML = "gro lavalas";
+  else if (weatherCondition == "ragged shower rain")
+      document.getElementById("kourivini").innerHTML = "lavalas";
+  else if (weatherCondition == "light intensity drizzle")
+      document.getElementById("kourivini").innerHTML = "ti grènnas";
+  else if (weatherCondition == "drizzle")
+      document.getElementById("kourivini").innerHTML = "grènnas";
+  else if (weatherCondition == "heavy intensity drizzle")
+      document.getElementById("kourivini").innerHTML = "gro grènnas";
+  else if (weatherCondition == "light intensity drizzle rain")
+      document.getElementById("kourivini").innerHTML = "ti grènnas";
+  else if (weatherCondition == "drizzle rain")
+      document.getElementById("kourivini").innerHTML = "grènnas";
+  else if (weatherCondition == "heavy intensity drizzle rain")
+      document.getElementById("kourivini").innerHTML = "gro grènnas";
+  else if (weatherCondition == "shower rain and drizzle")
+      document.getElementById("kourivini").innerHTML = "lavalas";
+  else if (weatherCondition == "heavy shower rain and drizzle")
+      document.getElementById("kourivini").innerHTML = "gro lavalas";
+  else if (weatherCondition == "shower drizzle")
+      document.getElementById("kourivini").innerHTML = "ti lavalas";
+  // Rain - 10d & 10n
+  else if (weatherCondition == "rain")
+      document.getElementById("kourivini").innerHTML = "lapli";
+  else if (weatherCondition == "light rain")
+      document.getElementById("kourivini").innerHTML = "ti lagrènn";
+  else if (weatherCondition == "moderate rain")
+      document.getElementById("kourivini").innerHTML = "lapli moyin";
+  else if (weatherCondition == "heavy intensity rain")
+      document.getElementById("kourivini").innerHTML = "gro lapli";
+  else if (weatherCondition == "very heavy rain")
+      document.getElementById("kourivini").innerHTML = "gro lapli";
+  else if (weatherCondition == "extreme rain")
+      document.getElementById("kourivini").innerHTML = "gro lapli";
+  // Thunderstorm - 11d & 11n
+  else if (weatherCondition == "thunderstorm")
+      document.getElementById("kourivini").innerHTML = "loragan tonnær";
+  else if (weatherCondition == "light thunderstorm")
+      document.getElementById("kourivini").innerHTML = "loragan tonnær fèb";
+  else if (weatherCondition == "ragged thunderstorm")
+      document.getElementById("kourivini").innerHTML = "loragan tonnær";
+  else if (weatherCondition == "heavy thunderstorm")
+      document.getElementById("kourivini").innerHTML = "gro loragan tonnær";
+  else if (weatherCondition == "thunderstorm with rain")
+      document.getElementById("kourivini").innerHTML = "loragan tonnær ak lapli";
+  else if (weatherCondition == "thunderstorm with light rain")
+      document.getElementById("kourivini").innerHTML = "loragan tonnær ak ti grènn";
+  else if (weatherCondition == "thunderstorm with heavy rain")
+      document.getElementById("kourivini").innerHTML = "loragan tonnær ak gro lapli";
+  else if (weatherCondition == "thunderstorm with drizzle")
+      document.getElementById("kourivini").innerHTML = "loragan tonnær ak grènnas";
+  else if (weatherCondition == "thunderstorm with light drizzle")
+      document.getElementById("kourivini").innerHTML = "loragan tonnær ak ti grènnas";
+  else if (weatherCondition == "thunderstorm with heavy drizzle")
+      document.getElementById("kourivini").innerHTML = "loragan tonnær ak lapli";
+  // Snow - 13d & 13n
+  else if (weatherCondition == "snow")
+      document.getElementById("kourivini").innerHTML = "lanèj";
+  else if (weatherCondition == "freezing rain")
+      document.getElementById("kourivini").innerHTML = "lapli glasé";
+  else if (weatherCondition == "light snow")
+      document.getElementById("kourivini").innerHTML = "ti grènn lanèj";
+  else if (weatherCondition == "heavy snow")
+      document.getElementById("kourivini").innerHTML = "gro lanèj";
+  else if (weatherCondition == "sleet")
+      document.getElementById("kourivini").innerHTML = "værglan";
+  else if (weatherCondition == "light shower sleet")
+      document.getElementById("kourivini").innerHTML = "værglan";
+  else if (weatherCondition == "shower sleet")
+      document.getElementById("kourivini").innerHTML = "værglan";
+  else if (weatherCondition == "light rain and snow")
+      document.getElementById("kourivini").innerHTML = "ti grènn ak lanèj";
+  else if (weatherCondition == "rain and snow")
+      document.getElementById("kourivini").innerHTML = "lapli ak lanèj";
+  else if (weatherCondition == "light shower snow")
+      document.getElementById("kourivini").innerHTML = "ti grènn lanèj";
+  else if (weatherCondition == "shower snow")
+      document.getElementById("kourivini").innerHTML = "lavalas lanèj";
+  else if (weatherCondition == "heavy shower snow")
+      document.getElementById("kourivini").innerHTML = "gro lavalas lanèj";
+  // Atmosphere - 50d & 50n
+  else if (weatherCondition == "mist")
+      document.getElementById("kourivini").innerHTML = "brouyar";
+  else if (weatherCondition == "haze")
+      document.getElementById("kourivini").innerHTML = "brouyar";
+  else if (weatherCondition == "fog")
+      document.getElementById("kourivini").innerHTML = "brouyar";
+  else if (weatherCondition == "smoke")
+      document.getElementById("kourivini").innerHTML = "boukann";
+  else if (weatherCondition == "dust")
+      document.getElementById("kourivini").innerHTML = "lapousyær";
+  else if (weatherCondition == "sand")
+      document.getElementById("kourivini").innerHTML = "lasab";
+  else if (weatherCondition == "volcanic ash")
+      document.getElementById("kourivini").innerHTML = "lasenn volkanik";
+  else if (weatherCondition == "squalls")
+      document.getElementById("kourivini").innerHTML = "bouras";
+  else if (weatherCondition == "tornado")
+      document.getElementById("kourivini").innerHTML = "tourbiyon";
+  else if (weatherCondition == "sand/dust whirls")
+      document.getElementById("kourivini").innerHTML = "tourbiyon";
 
     // City names in Kouri-Vini - Added by Louisianish
     // let cityKv = document.getElementById("location").innerHTML;
