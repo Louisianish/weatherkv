@@ -107,11 +107,11 @@ function displayWeather() {
     //     });   
     // });
 
-    if (weather.country == "US") {
-        locationElement.innerHTML = `${weather.city}, ${state}`;
-    } else {
-        locationElement.innerHTML = `${weather.city}, ${weather.country}`;
-    }
+    // if (weather.country == "US") {
+    //     locationElement.innerHTML = `${weather.city}, ${state}`;
+    // } else {
+    //     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
+    // }
 
     // Kouri-Vini weather description translations - Added by Louisianish
     let weatherCondition = document.getElementById("kourivini").innerHTML;
