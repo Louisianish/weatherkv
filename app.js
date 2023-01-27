@@ -316,34 +316,31 @@ form.addEventListener('submit', function(event) {
 })
 
 // Add a function for city to be submitted upon pressing 'Enter'
-document
-    .querySelector(".button")
-    .addEventListener("click", function () {
-        const city = (document.getElementById('searchbar').value);
-        const zip = (document.getElementById('searchbar').value);
-        const state = (document.getElementById('searchbar').value);
-        const country = (document.getElementById('searchbar').value);
-        let apiCity = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${city},${state},${country}&appid=${key}&units=imperial`;
+document.querySelector(".button").addEventListener("click", function () {
+    const city = document.getElementById("searchbar").value;
+    const zip = document.getElementById("searchbar").value;
+    const state = document.getElementById("searchbar").value;
+    const country = document.getElementById("searchbar").value;
+    let apiCity = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${city},${state},${country}&appid=${key}&units=imperial`;
 
-        console.log(apiCity);
-        
-        fetch(apiCity)
-            .then(function(response){
-                let data = response.json();
-                return data;
-            })
-            .then(function(data) {
-                weather.temperature.value = Math.floor(data.main.temp);
-                weather.description = data.weather[0].description;
-                weather.iconId = data.weather[0].icon;
-                weather.city = data.name;
-                weather.country = data.sys.country;
-            })
-            .then(function(){
-                displayWeather();
-            });   
-        });
-})
+    console.log(apiCity);
+
+    fetch(apiCity)
+    .then(function(response){
+      let data = response.json();
+      return data
+      .then(function(data) {
+          weather.temperature.value = Math.floor(data.main.temp);
+          weather.description = data.weather[0].description;
+          weather.iconId = data.weather[0].icon;
+          weather.city = data.name;
+          weather.country = data.sys.country;
+      })
+      .then(function(){
+          displayWeather();
+      });   
+    });
+});
 
 // // Fetch city-list.js file for city and U.S. state translations
 // const cities = fetch('city-list.js');
