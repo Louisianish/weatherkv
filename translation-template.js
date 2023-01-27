@@ -1,130 +1,130 @@
  // This is a language translation template by Michael Gisclair, a.k.a. "Louisianish" for the OpenWeatherMap API. Insert your own translations for the weather descriptions in the language of your choice. See it in action HERE: https://louisianish.github.io/weatherkv/ or on my personal website HERE: https://louisianish.com/weatherkv/
  // Link for OpenWeatherMap API weather descriptions: https://openweathermap.org/weather-conditions
- 
+
  // In HTML file, add an id attribute to the paragraph tag that lies within the div with the class entitled "temperature-description." Name the ID after your language or whatever you want.
- let text = document.getElementById("[insert ID name]").innerHTML;
+ let weatherCondition = document.getElementById("[insert ID name]").innerHTML;
 
  // Clear - 01d & 01n
  // Set weather description to display your language's word for "sunny" during daytime hours rather than the word for "clear sky"
- if(text == "clear sky" && weather.iconId == "01d")
+ if(weatherCondition == "clear sky" && weather.iconId == "01d")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'sunny']";
- else if(text == "clear sky" && weather.iconId == "01n")
+ else if(weatherCondition == "clear sky" && weather.iconId == "01n")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'clear sky']";
  // Clouds - 02d & 02n
- if(text == "few clouds")
+ if(weatherCondition == "few clouds")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'few clouds']";
  // Clouds - 03d & 03n
- else if(text == "scattered clouds")
+ else if(weatherCondition == "scattered clouds")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'scattered clouds']";
  // Clouds - 04d & 04n
- else if(text == "broken clouds")
+ else if(weatherCondition == "broken clouds")
  document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'broken clouds']";
- else if(text == "overcast clouds")
+ else if(weatherCondition == "overcast clouds")
  document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'overcast clouds']";
  // Drizzle & Rain - 09d & 09n
- else if(text == "shower rain")
+ else if(weatherCondition == "shower rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'shower rain']";
- else if(text == "light intensity shower rain")
+ else if(weatherCondition == "light intensity shower rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'light intensity shower rain']";
- else if(text == "heavy intensity shower rain")
+ else if(weatherCondition == "heavy intensity shower rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'heavy intensity shower rain']";
- else if(text == "ragged shower rain")
+ else if(weatherCondition == "ragged shower rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'ragged shower rain']";
- else if(text == "light intensity drizzle")
+ else if(weatherCondition == "light intensity drizzle")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'light intensity drizzle']";
- else if(text == "drizzle")
+ else if(weatherCondition == "drizzle")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'drizzle']";
- else if(text == "heavy intensity drizzle")
+ else if(weatherCondition == "heavy intensity drizzle")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'heavy intensity drizzle']";
- else if(text == "light intensity drizzle rain")
+ else if(weatherCondition == "light intensity drizzle rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'light intensity drizzle rain']";
- else if(text == "drizzle rain")
+ else if(weatherCondition == "drizzle rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'drizzle rain']";
- else if(text == "heavy intensity drizzle rain")
+ else if(weatherCondition == "heavy intensity drizzle rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'heavy intensity drizzle rain']";
- else if(text == "shower rain and drizzle")
+ else if(weatherCondition == "shower rain and drizzle")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'shower rain and drizzle']";
- else if(text == "heavy shower rain and drizzle")
+ else if(weatherCondition == "heavy shower rain and drizzle")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'heavy shower rain and drizzle']";
- else if(text == "shower drizzle")
+ else if(weatherCondition == "shower drizzle")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'shower drizzle']";
  // Rain - 10d & 10n
- else if(text == "rain")
+ else if(weatherCondition == "rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'rain']";
- else if(text == "light rain")
+ else if(weatherCondition == "light rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'light rain']";
- else if(text == "moderate rain")
+ else if(weatherCondition == "moderate rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'moderate rain']";
- else if(text == "heavy intensity rain")
+ else if(weatherCondition == "heavy intensity rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'heavy intensity rain']";
- else if(text == "very heavy rain")
+ else if(weatherCondition == "very heavy rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'very heavy rain']";
- else if(text == "extreme rain")
+ else if(weatherCondition == "extreme rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'extreme rain']";
  // Thunderstorm - 11d & 11n
- else if(text == "thunderstorm")
+ else if(weatherCondition == "thunderstorm")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'thunderstorm']";
- else if(text == "light thunderstorm")
+ else if(weatherCondition == "light thunderstorm")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'light thunderstorm']";
- else if(text == "ragged thunderstorm")
+ else if(weatherCondition == "ragged thunderstorm")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'ragged thunderstorm']";
- else if(text == "heavy thunderstorm")
+ else if(weatherCondition == "heavy thunderstorm")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'heavy thunderstorm']";
- else if(text == "thunderstorm with rain")
+ else if(weatherCondition == "thunderstorm with rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'thunderstorm with rain']";
- else if(text == "thunderstorm with light rain")
+ else if(weatherCondition == "thunderstorm with light rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'thunderstorm with light rain']";
- else if(text == "thunderstorm with heavy rain")
+ else if(weatherCondition == "thunderstorm with heavy rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'thunderstorm with heavy rain']";
- else if(text == "thunderstorm with drizzle")
+ else if(weatherCondition == "thunderstorm with drizzle")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'thunderstorm with drizzle']";
- else if(text == "thunderstorm with light drizzle")
+ else if(weatherCondition == "thunderstorm with light drizzle")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'thunderstorm with light drizzle']";
- else if(text == "thunderstorm with heavy drizzle")
+ else if(weatherCondition == "thunderstorm with heavy drizzle")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'thunderstorm with heavy drizzle']";
  // Snow - 13d & 13n
- else if(text == "snow")
+ else if(weatherCondition == "snow")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'snow']";
- else if(text == "freezing rain")
+ else if(weatherCondition == "freezing rain")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'freezing rain']";
- else if(text == "light snow")
+ else if(weatherCondition == "light snow")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'light snow']";
- else if(text == "heavy snow")
+ else if(weatherCondition == "heavy snow")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'heavy snow']";
- else if(text == "sleet")
+ else if(weatherCondition == "sleet")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'sleet']";
- else if(text == "light shower sleet")
+ else if(weatherCondition == "light shower sleet")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'light shower sleet']";
- else if(text == "shower sleet")
+ else if(weatherCondition == "shower sleet")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'shower sleet']";
- else if(text == "light rain and snow")
+ else if(weatherCondition == "light rain and snow")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'light rain and snow']";
- else if(text == "rain and snow")
+ else if(weatherCondition == "rain and snow")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'rain and snow']";
- else if(text == "light shower snow")
+ else if(weatherCondition == "light shower snow")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'light shower snow']";
- else if(text == "shower snow")
+ else if(weatherCondition == "shower snow")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'shower snow']";
- else if(text == "heavy shower snow")
+ else if(weatherCondition == "heavy shower snow")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'heavy shower snow']";
  // Atmosphere - 50d & 50n
- else if(text == "mist")
+ else if(weatherCondition == "mist")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'mist']";
- else if(text == "haze")
+ else if(weatherCondition == "haze")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'haze']";
- else if(text == "fog")
+ else if(weatherCondition == "fog")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'fog']";
- else if(text == "smoke")
+ else if(weatherCondition == "smoke")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'smoke']";
- else if(text == "dust")
+ else if(weatherCondition == "dust")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'dust']";
- else if(text == "sand")
+ else if(weatherCondition == "sand")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'sand']";
- else if(text == "volcanic ash")
+ else if(weatherCondition == "volcanic ash")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'volcanic ash']";
- else if(text == "squalls")
+ else if(weatherCondition == "squalls")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'squalls']";
- else if(text == "tornado")
+ else if(weatherCondition == "tornado")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'tornado']";
- else if(text == "sand/dust whirls")
+ else if(weatherCondition == "sand/dust whirls")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'sand/dust whirls']";
