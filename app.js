@@ -58,7 +58,6 @@ function showError(error) {
 // GET WEATHER FROM API PROVIDER
 function getWeather(latitude, longitude) {
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}&units=imperial`;
-    // let api = `https://api.openweathermap.org/data/2.5/weather?q=${zip},${city},${state},${country}&appid=${key}&units=imperial`;
 
     console.log(api);
     
