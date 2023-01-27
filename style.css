@@ -54,6 +54,7 @@ body {
 .notification {
     background-color: #f8d7da;
     display: none;
+    margin: 0 auto;
 }
 
 .notification p {
