@@ -10,7 +10,8 @@
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'sunny']";
  else if(weatherCondition == "clear sky" && weather.iconId == "01n")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'clear sky']";
- // Clouds - 02d & 02n
+ 
+     // Clouds - 02d & 02n
  if(weatherCondition == "few clouds")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'few clouds']";
  // Clouds - 03d & 03n
@@ -128,3 +129,182 @@
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'tornado']";
  else if(weatherCondition == "sand/dust whirls")
      document.getElementById("[insert ID name]").innerHTML = "[insert translation for 'sand/dust whirls']";
+
+
+
+// Switch statements for translation of weather conditions
+switch(weatherCondition) {
+    // Clouds - 02d & 02n
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    // Clouds - 03d & 03n
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    // Clouds - 04d & 04n
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    // Drizzle & Rain - 09d & 09n
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;            
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;            
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    // Rain - 10d & 10n
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;            
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    // Thunderstorm - 11d & 11n
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;            
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    // Snow - 13d & 13n
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;            
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;            
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    // Atmosphere - 50d & 50n
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;            
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+    case "[CONDITION]":
+        document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
+        break;
+}
