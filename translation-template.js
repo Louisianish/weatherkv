@@ -10,7 +10,7 @@
      document.getElementById("[insert ID name]").innerHTML = "[TRANSLATION for 'sunny']";
  else if(weatherCondition == "clear sky" && weather.iconId == "01n")
      document.getElementById("[insert ID name]").innerHTML = "[TRANSLATION for 'clear sky']";
- // Switch statements for TRANSLATION of weather conditions
+ // Switch statements for translation of weather conditions
 switch(weatherCondition) {
     // Clouds - 02d & 02n
     case "few clouds":
