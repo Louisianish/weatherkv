@@ -135,176 +135,176 @@
 // Switch statements for translation of weather conditions
 switch(weatherCondition) {
     // Clouds - 02d & 02n
-    case "[CONDITION]":
+    case "few clouds":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
     // Clouds - 03d & 03n
-    case "[CONDITION]":
+    case "scattered clouds":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
     // Clouds - 04d & 04n
-    case "[CONDITION]":
+    case "broken clouds":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "overcast clouds":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
     // Drizzle & Rain - 09d & 09n
-    case "[CONDITION]":
+    case "shower rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "light intensity shower rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "heavy intensity shower rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "ragged shower rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "light intensity drizzle":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;            
-    case "[CONDITION]":
+    case "drizzle":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "heavy intensity drizzle":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "light intensity drizzle rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "drizzle rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "heavy intensity drizzle rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "shower rain and drizzle":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;            
-    case "[CONDITION]":
+    case "heavy shower rain and drizzle":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "shower drizzle":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
     // Rain - 10d & 10n
-    case "[CONDITION]":
+    case "rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "light rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "moderate rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "heavy intensity rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;            
-    case "[CONDITION]":
+    case "very heavy rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "extreme rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
     // Thunderstorm - 11d & 11n
-    case "[CONDITION]":
+    case "thunderstorm":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "light thunderstorm":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "ragged thunderstorm":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "heavy thunderstorm":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;            
-    case "[CONDITION]":
+    case "thunderstorm with rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "thunderstorm with light rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "thunderstorm with heavy rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "thunderstorm with drizzle":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "thunderstorm with light drizzle":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "thunderstorm with heavy drizzle":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
     // Snow - 13d & 13n
-    case "[CONDITION]":
+    case "snow":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "freezing rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "light snow":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "heavy snow":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;            
-    case "[CONDITION]":
+    case "sleet":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "light shower sleet":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "shower sleet":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "light rain and snow":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "rain and snow":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "light shower snow":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;            
-    case "[CONDITION]":
+    case "shower snow":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "heavy shower snow":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
     // Atmosphere - 50d & 50n
-    case "[CONDITION]":
+    case "mist":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "haze":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "fog":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "smoke":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;            
-    case "[CONDITION]":
+    case "dust":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "sand":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "volcanic ash":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "squalls":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "tornado":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
-    case "[CONDITION]":
+    case "sand/dust whirls":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION]";
         break;
 }
