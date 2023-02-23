@@ -42,7 +42,7 @@ function newFunction() {
 }
 
 // SET USER'S POSITION
-function setPosition(position){
+function setPosition(position) {
     let latitude = position.coords.latitude;
     let longitude = position.coords.longitude;
     
