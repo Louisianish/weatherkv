@@ -2,13 +2,13 @@
  // Link for OpenWeatherMap API weather descriptions: https://openweathermap.org/weather-conditions
 
  // In HTML file, add an id attribute to the paragraph tag that lies within the div with the class entitled "temperature-description." Name the ID after your language or whatever you want.
- let weatherCondition = document.getElementById("[insert ID name]").innerHTML;
+ let weatherCondition = document.getElementById("[insert ID name]");
 
  // Clear - 01d & 01n
  // Set weather description to display your language's word for "sunny" during daytime hours rather than the word for "clear sky"
- if(weatherCondition == "clear sky" && weather.iconId == "01d")
+ if(weatherCondition.innerHTML == "clear sky" && weather.iconId == "01d")
      document.getElementById("[insert ID name]").innerHTML = "[TRANSLATION for 'sunny']";
- else if(weatherCondition == "clear sky" && weather.iconId == "01n")
+ else if(weatherCondition.innerHTML == "clear sky" && weather.iconId == "01n")
      document.getElementById("[insert ID name]").innerHTML = "[TRANSLATION for 'clear sky']";
  // Switch statements for translation of weather conditions
 switch(weatherCondition) {
