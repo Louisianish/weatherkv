@@ -11,28 +11,28 @@
  else if(weatherCondition.innerHTML == "clear sky" && weather.iconId == "01n")
      document.getElementById("[insert ID name]").innerHTML = "[TRANSLATION for 'clear sky']";
  // Switch statements for translation of weather conditions
-switch(weatherCondition) {
+switch(weatherCondition.innerHTML) {
     // Clouds - 02d & 02n
     case "few clouds":
-        document.getElementById("kourivini").innerHTML = "[TRANSLATION for 'few clouds']";
+        weatherCondition.innerHTML = "[TRANSLATION for 'few clouds']";
         break;
     // Clouds - 03d & 03n
     case "scattered clouds":
-        document.getElementById("kourivini").innerHTML = "[TRANSLATION for 'scattered clouds']";
+        weatherCondition.innerHTML = "[TRANSLATION for 'scattered clouds']";
         break;
     // Clouds - 04d & 04n
     case "broken clouds":
-        document.getElementById("kourivini").innerHTML = "[TRANSLATION for 'broken clouds']";
+        weatherCondition.innerHTML = "[TRANSLATION for 'broken clouds']";
         break;
     case "overcast clouds":
-        document.getElementById("kourivini").innerHTML = "[TRANSLATION for 'overcast clouds']";
+        weatherCondition.innerHTML = "[TRANSLATION for 'overcast clouds']";
         break;
     // Drizzle & Rain - 09d & 09n
     case "shower rain":
-        document.getElementById("kourivini").innerHTML = "[TRANSLATION for 'shower rain']";
+        weatherCondition.innerHTML = "[TRANSLATION for 'shower rain']";
         break;
     case "light intensity shower rain":
-        document.getElementById("kourivini").innerHTML = "[TRANSLATION for 'light intensity shower rain']";
+        weatherCondition.innerHTML = "[TRANSLATION for 'light intensity shower rain']";
         break;
     case "heavy intensity shower rain":
         document.getElementById("kourivini").innerHTML = "[TRANSLATION for 'heavy intensity shower rain']";
