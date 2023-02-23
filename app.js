@@ -95,38 +95,38 @@ function displayWeather() {
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 
     // Kouri-Vini weather description translations - Added by Louisianish
-    let weatherCondition = document.getElementById("kourivini");
+    let weatherCondition = document.getElementById("kourivini").innerHTML;
 
     // Clear - 01d & 01n
     // Set weather description to display "plin soléy" ("sunny") during daytime hours rather than "syèl klær"
-    if (weatherCondition.innerHTML == "clear sky" && weather.iconId == "01d")
+    if (weatherCondition == "clear sky" && weather.iconId == "01d")
         document.getElementById("kourivini").innerHTML = "plin soléy";
-    else if (weatherCondition.innerHTML == "clear sky" && weather.iconId == "01n")
+    else if (weatherCondition == "clear sky" && weather.iconId == "01n")
         document.getElementById("kourivini").innerHTML = "syèl klær";
     // Switch statements for translation of weather conditions
     else {
-        switch(weatherCondition.innerHTML) {
+        switch(weatherCondition) {
             // Clouds - 02d & 02n
             case "few clouds":
-                weatherCondition.innerHTML = "kèk miriyaj";
+                weatherCondition = "kèk miriyaj";
                 break;
             // Clouds - 03d & 03n
             case "scattered clouds":
-                weatherCondition.innerHTML = "kèk miriyaj";
+                weatherCondition = "kèk miriyaj";
                 break;
             // Clouds - 04d & 04n
             case "broken clouds":
-                weatherCondition.innerHTML = "kouvær";
+                weatherCondition = "kouvær";
                 break;
             case "overcast clouds":
-                weatherCondition.innerHTML = "kouvær";
+                weatherCondition = "kouvær";
                 break;
             // Drizzle & Rain - 09d & 09n
             case "shower rain":
-                weatherCondition.innerHTML.innerHTML = "lavalas";
+                weatherCondition = "lavalas";
                 break;
             case "light intensity shower rain":
-                weatherCondition.innerHTML.innerHTML = "ti lavalas";
+                weatherCondition = "ti lavalas";
                 break;
             case "heavy intensity shower rain":
                 weatherCondition.innerHTML = "gro lavalas";
