@@ -6,9 +6,9 @@ let weatherCondition = document.getElementById("[insert ID name]");
 
 // Clear - 01d & 01n
 // Set weather description to display your language's word for "sunny" during daytime hours rather than the word for "clear sky"
-if(weatherCondition.innerHTML == "clear sky" && weather.iconId == "01d")
+if (weatherCondition.innerHTML == "clear sky" && weather.iconId == "01d")
     document.getElementById("[insert ID name]").innerHTML = "[TRANSLATION for 'sunny']";
-else if(weatherCondition.innerHTML == "clear sky" && weather.iconId == "01n")
+else if (weatherCondition.innerHTML == "clear sky" && weather.iconId == "01n")
     document.getElementById("[insert ID name]").innerHTML = "[TRANSLATION for 'clear sky']";
 // Switch statements for translation of weather conditions
 else {
