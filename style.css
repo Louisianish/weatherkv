@@ -155,3 +155,18 @@ body {
     cursor: pointer;
 }
 
+#github {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#github a {
+    text-decoration: none;
+    color: #72b8d4;
+}
+
+#github a:hover {
+    color: #609fbf;
+}
+
