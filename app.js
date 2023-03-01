@@ -350,7 +350,7 @@ var form = document.getElementById('search')
 form.addEventListener('submit', function(event) {
   event.preventDefault()
 
-  var searchbar = document.getElementById('searchbar').value
+  var searchbar = document.getElementById('searchbar').value;
 
   console.log(searchbar);
 
