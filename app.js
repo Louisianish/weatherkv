@@ -4,7 +4,7 @@
 // - "when Fahrenheit is displayed upon loading"
 // - "Search for a city"
 // - "Add a function for city to be submitted upon pressing 'Enter'"
-// To see my Louisiana Creole weather app, visit https://louisianish.github.io/weatherkv/ or my personal site at https://louisianish.com/weatherkv/
+// To see my Louisiana Creole weather app, visit https://louisianish.github.io/weatherkv/ or my personal site at https://louisianish.com/weatherkv
 // To view this GitHub repository with the README and my weather translation template, visit https://github.com/Louisianish/weatherkv
 
 // api key : 82005d27a116c2880c8f0fcb866998a0
