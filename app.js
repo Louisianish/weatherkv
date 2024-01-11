@@ -283,3 +283,8 @@ document.querySelector(".button").addEventListener("click", function () {
 // if (cities.city.state === "FL") {
 //     document.getElementById("location").innerHTML = `${city.name}, Laflorid`);
 // }
+
+if (cities.city.country === "US") {
+    document.getElementById("location").innerHTML = `${city.name}, ${city.state}`;
+}
+
