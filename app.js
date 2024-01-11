@@ -284,7 +284,7 @@ document.querySelector(".button").addEventListener("click", function () {
 //     document.getElementById("location").innerHTML = `${city.name}, Laflorid`);
 // }
 
-if (cities.city.country === "US") {
+if (cities.city.state.country === "US") {
     document.getElementById("location").innerHTML = `${city.name}, ${city.state}`;
 }
 
